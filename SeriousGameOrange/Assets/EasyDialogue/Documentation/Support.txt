@@ -1,4 +1,0 @@
-Support:
-name: Chris McCole
-email: chrismccole1@gmail.com
-Please include "EASYDIALOGUE" in the subject line.

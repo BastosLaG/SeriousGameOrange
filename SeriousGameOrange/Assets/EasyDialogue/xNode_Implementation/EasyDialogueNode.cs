@@ -15,8 +15,7 @@ namespace EasyDialogue
         private EasyDialogueNode previousNodes;
         [Output, UnityEngine.SerializeField]
         private EasyDialogueNode nextNode;
-
-        public CustomNodeInfo customNodeInfo;
+        
         public node_dialogue_option characterDialogue;
         public bool hasPlayerResponses = false;
         public List<node_dialogue_option> playerResponses = new List<node_dialogue_option>();

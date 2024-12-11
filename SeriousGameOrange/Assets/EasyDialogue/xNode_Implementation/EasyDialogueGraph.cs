@@ -12,7 +12,6 @@ namespace EasyDialogue
         #region Attributes
 
         [SerializeField] public LocalGraphContext localGraphContext;
-        [SerializeField] public CustomGraphInfo customGraphInfo;
 
         private EasyDialogueNode currNode = null;
         [SerializeField, HideInInspector]
