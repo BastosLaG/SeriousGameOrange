@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4fe506f7d6e57a34c8f1430764e988f9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169776
+  packageName: Easy Dialogue
+  packageVersion: 1.06.00
+  assetPath: Assets/EasyDialogue/Samples/Minimal_Implementation/DialogueGraphs/Jump3.asset
+  uploadId: 462288

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e55528b4f8e22e643b052d268cfc8a78
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169776
+  packageName: Easy Dialogue
+  packageVersion: 1.06.00
+  assetPath: Assets/EasyDialogue/Samples/Minimal_Implementation/Scripts/DialogueManager.cs
+  uploadId: 462288

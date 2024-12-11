@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d49615be31544764bae7a5883cb03823
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169776
+  packageName: Easy Dialogue
+  packageVersion: 1.06.00
+  assetPath: Assets/EasyDialogue/Samples/Minimal_Implementation/MinimalScene.unity
+  uploadId: 462288

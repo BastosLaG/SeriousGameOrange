@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e3ab4a9056f19e347a6c88beb6cfd3a8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169776
+  packageName: Easy Dialogue
+  packageVersion: 1.06.00
+  assetPath: Assets/EasyDialogue/Samples/Minimal_Implementation/Characters/TeacherChar.asset
+  uploadId: 462288

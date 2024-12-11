@@ -1,0 +1,17 @@
+{
+    "name": "SerializableDictEditor",
+    "references": [
+        "GUID:b5a66c505e6fcf445b7558e206db5ea6"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

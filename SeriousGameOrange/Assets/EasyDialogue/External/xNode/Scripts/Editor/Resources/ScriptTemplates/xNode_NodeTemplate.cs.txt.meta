@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 85f6f570600a1a44d8e734cb111a8b89
+timeCreated: 1519049802
+licenseType: Store
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169776
+  packageName: Easy Dialogue
+  packageVersion: 1.06.00
+  assetPath: Assets/EasyDialogue/External/xNode/Scripts/Editor/Resources/ScriptTemplates/xNode_NodeTemplate.cs.txt
+  uploadId: 462288

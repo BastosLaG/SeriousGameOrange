@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bb97cb53e4cf4394399c37fd1570fd91
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169776
+  packageName: Easy Dialogue
+  packageVersion: 1.06.00
+  assetPath: Assets/EasyDialogue/External/xNode/xNode_LICENCE.md
+  uploadId: 462288

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4b57d709207de6c44b6f6142566bae5f
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169776
+  packageName: Easy Dialogue
+  packageVersion: 1.06.00
+  assetPath: Assets/EasyDialogue/External/SerializableDictionary/Editor/SerializableDictEditor.asmdef
+  uploadId: 462288

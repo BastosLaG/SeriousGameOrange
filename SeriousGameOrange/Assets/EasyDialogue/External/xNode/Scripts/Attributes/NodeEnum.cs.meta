@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 10a8338f6c985854697b35459181af0a
+timeCreated: 1541633942
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169776
+  packageName: Easy Dialogue
+  packageVersion: 1.06.00
+  assetPath: Assets/EasyDialogue/External/xNode/Scripts/Attributes/NodeEnum.cs
+  uploadId: 462288

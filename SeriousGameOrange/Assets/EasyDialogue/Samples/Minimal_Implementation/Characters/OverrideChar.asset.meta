@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 33522270f4c719242b360263377c313c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169776
+  packageName: Easy Dialogue
+  packageVersion: 1.06.00
+  assetPath: Assets/EasyDialogue/Samples/Minimal_Implementation/Characters/OverrideChar.asset
+  uploadId: 462288

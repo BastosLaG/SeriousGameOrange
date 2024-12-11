@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 002c1bbed08fa44d282ef34fd5edb138
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169776
+  packageName: Easy Dialogue
+  packageVersion: 1.06.00
+  assetPath: Assets/EasyDialogue/External/xNode/Scripts/Editor/XNodeEditor.asmdef
+  uploadId: 462288
