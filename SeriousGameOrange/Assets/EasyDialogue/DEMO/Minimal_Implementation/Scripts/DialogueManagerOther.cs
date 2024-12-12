@@ -1,9 +1,7 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace EasyDialogue {
-    /// <summary>
-    /// The only script in the Minimal_Implementation Scene, this houses all interactions with the user and EasyDialogue System
-    /// </summary>
     public class DialogueManagerOther : MonoBehaviour {
 
         #region Attributes
@@ -27,17 +25,17 @@ namespace EasyDialogue {
 
         #region Setup And Input
 
+        [Obsolete("Obsolete")]
         private void Start() {
             myCanvas = GetComponent<Canvas>();
             easyDialogueManager = FindObjectOfType<EasyDialogueManager>();
-            easyDialogueManager.OnDialogueStarted += (EasyDialogueGraph _graph, dialogue_line _dl) => { Debug.Log($"{_dl.text} was said by {_dl.character}"); };
-            easyDialogueManager.OnDialogueProgressed += OnDialogueProgressedHandler;
-            easyDialogueManager.OnDialogueEnded += (EasyDialogueGraph _graph) => Debug.Log($"Dialogue ended on graph {_graph.name}");
+            
+            //SUPRIMER LES 3 LIGNES UNE FOIS LES TESTS FINI
+            easyDialogueManager.OnDialogueStarted += (EasyDialogueGraph graph, DialogueLine dl) => { Debug.Log($"{dl.Text} was said by {dl.Character}"); };
+            easyDialogueManager.OnDialogueProgressed += (EasyDialogueGraph graph, DialogueLine dl) => { Debug.Log($"{dl.Text} was said by {dl.Character}"); };
+            easyDialogueManager.OnDialogueEnded += (EasyDialogueGraph graph) => Debug.Log($"Dialogue ended on graph {graph.name}");
+            
             InitializeDialogue();
-        }
-
-        private void OnDialogueProgressedHandler(EasyDialogueGraph _graph, dialogue_line _line) {
-            Debug.Log($"{_line.text} was said by {_line.character}");
         }
 
         /// <summary>
@@ -68,7 +66,7 @@ namespace EasyDialogue {
             if(startWithOverrideCharacter) {
                 currentGraph.AddOverrideCharacter(ref overrideCharacter);
             }
-            dialogue_line dialogue = easyDialogueManager.StartDialogueEncounter(ref _dialogueGraph);
+            DialogueLine dialogue = easyDialogueManager.StartDialogueEncounter(ref _dialogueGraph);
             DisplayDialogue(ref dialogue);
         }
 
@@ -78,7 +76,7 @@ namespace EasyDialogue {
         /// <param name="_choiceIndex"></param>
         public void GetNextDialogue(int _choiceIndex = 0) {
             if(!HasDialogueGraph()) return;
-            dialogue_line dialogue;
+            DialogueLine dialogue;
             if(easyDialogueManager.GetNextDialogue(ref currentGraph, out dialogue, (ushort)_choiceIndex)) {
                 DisplayDialogue(ref dialogue);
             } else {
@@ -112,10 +110,10 @@ namespace EasyDialogue {
             HidePlayerResponses();
         }
 
-        private void DisplayDialogue(ref dialogue_line _dialogue) {
-            ShowCharacterDialogue(_dialogue.character, _dialogue.text);
+        private void DisplayDialogue(ref DialogueLine _dialogue) {
+            ShowCharacterDialogue(_dialogue.Character, _dialogue.Text);
             if(_dialogue.HasPlayerResponses()) {
-                ShowPlayerResponses(_dialogue.playerResponces);
+                ShowPlayerResponses(_dialogue.PlayerResponces);
             } else {
                 HidePlayerResponses();
             }

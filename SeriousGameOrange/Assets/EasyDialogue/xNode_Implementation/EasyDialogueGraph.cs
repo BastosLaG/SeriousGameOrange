@@ -11,7 +11,7 @@ namespace EasyDialogue
     {
         #region Attributes
 
-        [SerializeField] public LocalGraphContext localGraphContext;
+        [SerializeField] public ILocalGraphContext localGraphContext;
 
         private EasyDialogueNode currNode = null;
         [SerializeField, HideInInspector]
@@ -62,7 +62,7 @@ namespace EasyDialogue
             return currNode;
         }
 
-        public dialogue_line GetCurrentDialogueLine()
+        public DialogueLine GetCurrentDialogueLine()
         {
             Character charOverride = null;
             if (overrideCharacters.Count > 0 && overrideCharacters.Peek() != null)
@@ -121,38 +121,38 @@ namespace EasyDialogue
             return valid;
         }
 
-        public static dialogue_line CreateDialogueLine(ref EasyDialogueNode _node, ref Character _overrideCharacter, ref LocalGraphContext _glc)
+        public static DialogueLine CreateDialogueLine(ref EasyDialogueNode _node, ref Character _overrideCharacter, ref ILocalGraphContext _glc)
         {
-            dialogue_line result = new dialogue_line();
-            result.text = "";
-            result.character = _node.characterDialogue.associatedCharacter;
+            DialogueLine result = new DialogueLine();
+            result.Text = "";
+            result.Character = _node.characterDialogue.associatedCharacter;
             if(_overrideCharacter != null)
             {
-                result.character = _overrideCharacter;
+                result.Character = _overrideCharacter;
             }
 
-            result.text = _node.characterDialogue.text;
+            result.Text = _node.characterDialogue.text;
             if(_glc != null)
             {
-                result.text = _glc.Evaluate(ref result.text);
+                result.Text = _glc.Evaluate(ref result.Text);
             }
 
             if(_node.playerResponses == null || _node.playerResponses.Count == 0)
             {
-                result.playerResponces = null;
+                result.PlayerResponces = null;
             }
             else
             {
-                result.playerResponces = new string[_node.playerResponses.Count];
+                result.PlayerResponces = new string[_node.playerResponses.Count];
 
                 for(int playerResponseIndex = 0; 
                     playerResponseIndex < _node.playerResponses.Count;
                     ++playerResponseIndex)
                 {
-                    result.playerResponces[playerResponseIndex] = _node.playerResponses[playerResponseIndex].text;
+                    result.PlayerResponces[playerResponseIndex] = _node.playerResponses[playerResponseIndex].text;
                     if (_glc != null)
                     {
-                        result.playerResponces[playerResponseIndex] = _glc.Evaluate(ref result.playerResponces[playerResponseIndex]);
+                        result.PlayerResponces[playerResponseIndex] = _glc.Evaluate(ref result.PlayerResponces[playerResponseIndex]);
                     }
                 }
             }

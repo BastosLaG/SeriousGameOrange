@@ -183,7 +183,7 @@ namespace EasyDialogue {
             ++EditorGUI.indentLevel;
             for (int responceIndex = 0; responceIndex < easyDialogueNode.playerResponses.Count; ++responceIndex)
             {
-                node_dialogue_option currResponse = easyDialogueNode.playerResponses[responceIndex];
+                NodeDialogueOption currResponse = easyDialogueNode.playerResponses[responceIndex];
                 XNode.NodePort playerResponsePort = null;
                 foreach (XNode.NodePort port in ports)
                 {

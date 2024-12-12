@@ -76,7 +76,7 @@ namespace EasyDialogue.Samples
         #endregion
     }
 
-    public class CustomGraphContext : LocalGraphContext
+    public class CustomGraphContext : ILocalGraphContext
     {
         public item_data heldItem = new item_data();
 

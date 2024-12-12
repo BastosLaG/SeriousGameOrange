@@ -16,9 +16,9 @@ namespace EasyDialogue
         [Output, UnityEngine.SerializeField]
         private EasyDialogueNode nextNode;
         
-        public node_dialogue_option characterDialogue;
+        public NodeDialogueOption characterDialogue;
         public bool hasPlayerResponses = false;
-        public List<node_dialogue_option> playerResponses = new List<node_dialogue_option>();
+        public List<NodeDialogueOption> playerResponses = new List<NodeDialogueOption>();
 
         private const string dynamicNodePrefix = "nextNode";
 
@@ -65,7 +65,7 @@ namespace EasyDialogue
 
         public void AddPlayerResponse()
         {
-            node_dialogue_option curr = new node_dialogue_option();
+            NodeDialogueOption curr = new NodeDialogueOption();
             curr.text = "";
             curr.isExpanded = false;
             playerResponses.Add(curr);

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47e9957803e5aec46ad2ececf81e4efc, type: 3}
-  m_Name: EasyDialogueCharacter
+  m_Name: Onilaf
   m_EditorClassIdentifier: 
   id: Onilaf
   displayName: Onilaf

@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
+//NE SURTOUT PAS TOUCHER A CE CODE UNE FOIS LES DIALOGUES FAIT, CELA LES SUPPRIMERA TOUS !!!
+//S'il y a des erreurs, on fera avec ou VOUS vous amusez à recréer tous les dialogues
 
 namespace EasyDialogue {
     public class EasyDialogueManager : MonoBehaviour {
         [SerializeField] private Character defaultNullCharacter;
 
-        public delegate void DialogueGraphLineDelegate(EasyDialogueGraph graph, dialogue_line line);
+        public delegate void DialogueGraphLineDelegate(EasyDialogueGraph graph, DialogueLine line);
         public delegate void DialogueGraphDelegate(EasyDialogueGraph graph);
 
         public event DialogueGraphLineDelegate OnDialogueStarted;
@@ -12,20 +14,20 @@ namespace EasyDialogue {
         public event DialogueGraphDelegate OnDialogueEnded;
 
 
-        public dialogue_line StartDialogueEncounter(ref EasyDialogueGraph graph) {
+        public DialogueLine StartDialogueEncounter(ref EasyDialogueGraph graph) {
             Debug.Assert(graph, "Sent in a null dialogue graph!");
             graph.InitializeGraph();
-            dialogue_line result = graph.GetCurrentDialogueLine();
+            DialogueLine result = graph.GetCurrentDialogueLine();
             result = UpdateDialogueLine(result);
             OnDialogueStarted?.Invoke(graph, result);
             return result;
         }
 
-        public bool GetNextDialogue(ref EasyDialogueGraph graph, out dialogue_line outLine, ushort dialogueChoice = 0) {
+        public bool GetNextDialogue(ref EasyDialogueGraph graph, out DialogueLine outLine, ushort dialogueChoice = 0) {
             bool result = false;
             Debug.Assert(graph, "Sent in a null dialogue graph!");
-            outLine = new dialogue_line();
-            outLine.text = "";
+            outLine = new DialogueLine();
+            outLine.Text = "";
 
             if (graph.GoToNextNode(dialogueChoice)) {
                 outLine = graph.GetCurrentDialogueLine();
@@ -39,16 +41,16 @@ namespace EasyDialogue {
             return result;
         }
 
-        public dialogue_line UpdateDialogueLine(dialogue_line dialogueLine) {
-            dialogue_line result = dialogueLine;
-            if (!result.character) {
-                result.character = defaultNullCharacter;
+        public DialogueLine UpdateDialogueLine(DialogueLine dialogueLine) {
+            DialogueLine result = dialogueLine;
+            if (!result.Character) {
+                result.Character = defaultNullCharacter;
             }
 
-            result.text = dialogueLine.text;
+            result.Text = dialogueLine.Text;
             if (result.HasPlayerResponses()) {
-                for (int i = 0; i < dialogueLine.playerResponces.Length; ++i) {
-                    result.playerResponces[i] = dialogueLine.playerResponces[i];
+                for (int i = 0; i < dialogueLine.PlayerResponces.Length; ++i) {
+                    result.PlayerResponces[i] = dialogueLine.PlayerResponces[i];
                 }
             }
 
