@@ -13,7 +13,7 @@ namespace EasyDialogue {
 
 
         public dialogue_line StartDialogueEncounter(ref EasyDialogueGraph graph) {
-            Debug.Assert(graph != null, "Sent in a null dialogue graph!");
+            Debug.Assert(graph, "Sent in a null dialogue graph!");
             graph.InitializeGraph();
             dialogue_line result = graph.GetCurrentDialogueLine();
             result = UpdateDialogueLine(result);
@@ -21,44 +21,44 @@ namespace EasyDialogue {
             return result;
         }
 
-        public bool GetNextDialogue(ref EasyDialogueGraph _graph, out dialogue_line _outLine,
-            ushort dialogueChoice = 0) {
+        public bool GetNextDialogue(ref EasyDialogueGraph graph, out dialogue_line outLine, ushort dialogueChoice = 0) {
             bool result = false;
-            Debug.Assert(_graph != null, "Sent in a null dialogue graph!");
-            _outLine = new dialogue_line();
-            _outLine.text = "";
+            Debug.Assert(graph, "Sent in a null dialogue graph!");
+            outLine = new dialogue_line();
+            outLine.text = "";
 
-            if(_graph.GoToNextNode(dialogueChoice)) {
-                _outLine = _graph.GetCurrentDialogueLine();
-                _outLine = UpdateDialogueLine(_outLine);
-                OnDialogueProgressed?.Invoke(_graph, _outLine);
+            if (graph.GoToNextNode(dialogueChoice)) {
+                outLine = graph.GetCurrentDialogueLine();
+                outLine = UpdateDialogueLine(outLine);
+                OnDialogueProgressed?.Invoke(graph, outLine);
                 result = true;
             } else {
-                EndDialogueEncounter(ref _graph);
+                EndDialogueEncounter(ref graph);
             }
 
             return result;
-        }
-        
-        public bool EndDialogueEncounter(ref EasyDialogueGraph _graph) {
-            Debug.Assert(_graph != null, "Sent in a null dialogue graph!");
-            OnDialogueEnded?.Invoke(_graph);
-            return true;
         }
 
         public dialogue_line UpdateDialogueLine(dialogue_line dialogueLine) {
             dialogue_line result = dialogueLine;
-            if(!result.character) {
+            if (!result.character) {
                 result.character = defaultNullCharacter;
             }
 
             result.text = dialogueLine.text;
-            if(result.HasPlayerResponses()) {
-                for(int i = 0; i < dialogueLine.playerResponces.Length; ++i) {
+            if (result.HasPlayerResponses()) {
+                for (int i = 0; i < dialogueLine.playerResponces.Length; ++i) {
                     result.playerResponces[i] = dialogueLine.playerResponces[i];
                 }
             }
+
             return result;
+        }
+
+        public bool EndDialogueEncounter(ref EasyDialogueGraph graph) {
+            Debug.Assert(graph, "Sent in a null dialogue graph!");
+            OnDialogueEnded?.Invoke(graph);
+            return true;
         }
     }
 }

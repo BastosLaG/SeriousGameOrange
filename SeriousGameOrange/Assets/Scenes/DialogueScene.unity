@@ -511,7 +511,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1098093338}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: EasyDialogue.Samples.DialogueManager, Assembly-CSharp
         m_MethodName: GetNextDialogue
         m_Mode: 3
@@ -781,7 +781,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1098093338}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: EasyDialogue.Samples.DialogueManager, Assembly-CSharp
         m_MethodName: GetNextDialogue
         m_Mode: 3
@@ -980,7 +980,6 @@ GameObject:
   - component: {fileID: 1098093336}
   - component: {fileID: 1098093335}
   - component: {fileID: 1098093334}
-  - component: {fileID: 1098093338}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1072,26 +1071,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1098093338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1098093333}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e55528b4f8e22e643b052d268cfc8a78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textBox: 
-  characterName: 
-  playerChoices:
-  - 
-  - 
-  graphToPlay: {fileID: 11400000, guid: 1dbc936dd5063154da8bc5118e1674fa, type: 2}
-  startWithOverrideCharacter: 0
-  overrideCharacter: {fileID: 0}
 --- !u!1 &1280095560
 GameObject:
   m_ObjectHideFlags: 0
@@ -1374,6 +1353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1518139589}
   - component: {fileID: 1518139590}
+  - component: {fileID: 1518139591}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1409,6 +1389,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultNullCharacter: {fileID: 0}
+--- !u!114 &1518139591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518139588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5f4765a6e37e6b4a9a41807be95b31e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textBox: {fileID: 0}
+  playerChoices: []
+  graphToPlay: {fileID: 0}
 --- !u!1 &1525161428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1909,7 +1904,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1098093338}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: EasyDialogue.Samples.DialogueManager, Assembly-CSharp
         m_MethodName: GetNextDialogue
         m_Mode: 3

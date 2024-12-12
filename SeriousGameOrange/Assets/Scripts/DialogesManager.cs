@@ -1,18 +1,14 @@
+using EasyDialogue;
 using UnityEngine;
 using TMPro;
 
 public class DialogesManager : MonoBehaviour {
     [SerializeField] private TMP_Text textBox;
-    [SerializeField] private TMP_Text characterName;
     [SerializeField] private TMP_Text[] playerChoices;
     [SerializeField] EasyDialogue.EasyDialogueGraph graphToPlay;
 
-    [SerializeField] bool startWithOverrideCharacter;
-    [SerializeField, Tooltip("This will only be used if \"startWithOverrideCharacter\" is ticked on")]
-    //Character overrideCharacter;
-
-    //private EasyDialogueGraph currentGraph;
-    //public bool HasDialogueGraph() => currentGraph != null;
+    private EasyDialogueGraph currentGraph;
+    public bool HasDialogueGraph() => currentGraph != null;
     //private EasyDialogueManager easyDialogueManager;
     private Canvas myCanvas;
 
