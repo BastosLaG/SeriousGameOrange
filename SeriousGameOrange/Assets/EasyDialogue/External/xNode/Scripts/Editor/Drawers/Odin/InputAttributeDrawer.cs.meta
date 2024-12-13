@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 2fd590b2e9ea0bd49b6986a2ca9010ab
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169776
+  packageName: Easy Dialogue
+  packageVersion: 1.06.00
+  assetPath: Assets/EasyDialogue/External/xNode/Scripts/Editor/Drawers/Odin/InputAttributeDrawer.cs
+  uploadId: 462288

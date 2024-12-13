@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8a406f012b765a54faafc2ca47c9be22
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169776
+  packageName: Easy Dialogue
+  packageVersion: 1.06.00
+  assetPath: Assets/EasyDialogue/External/SerializableDictionary/SerializableDictionary_LICENSE
+  uploadId: 462288

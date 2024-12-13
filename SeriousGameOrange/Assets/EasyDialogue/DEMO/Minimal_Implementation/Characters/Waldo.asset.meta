@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 047192799680f174ca67cc9509c63e66
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169776
+  packageName: Easy Dialogue
+  packageVersion: 1.06.00
+  assetPath: Assets/EasyDialogue/Samples/Minimal_Implementation/Characters/Waldo.asset
+  uploadId: 462288

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d5d9e1fb5699d104c9e0aa32d389fe12
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169776
+  packageName: Easy Dialogue
+  packageVersion: 1.06.00
+  assetPath: Assets/EasyDialogue/Samples/Minimal_Implementation/DialogueGraphs/TestJumpGraph.asset
+  uploadId: 462288

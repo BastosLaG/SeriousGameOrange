@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a1093ed3fe7399b45ba96aa200bc7411
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169776
+  packageName: Easy Dialogue
+  packageVersion: 1.06.00
+  assetPath: Assets/EasyDialogue/Internal/Scripts/UserFacingAPI/Structs.cs
+  uploadId: 462288
