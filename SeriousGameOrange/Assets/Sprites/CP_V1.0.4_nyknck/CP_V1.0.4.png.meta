@@ -970,10 +970,10 @@ TextureImporter:
       name: CP_V1.0.4_15
       rect:
         serializedVersion: 2
-        x: 192
+        x: 16
         y: 800
         width: 64
-        height: 54
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -992,10 +992,10 @@ TextureImporter:
       name: CP_V1.0.4_16
       rect:
         serializedVersion: 2
-        x: 401
-        y: 848
-        width: 14
-        height: 16
+        x: 112
+        y: 800
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1014,10 +1014,10 @@ TextureImporter:
       name: CP_V1.0.4_17
       rect:
         serializedVersion: 2
-        x: 432
-        y: 848
-        width: 16
-        height: 16
+        x: 192
+        y: 800
+        width: 64
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1036,10 +1036,10 @@ TextureImporter:
       name: CP_V1.0.4_18
       rect:
         serializedVersion: 2
-        x: 466
-        y: 848
-        width: 10
-        height: 14
+        x: 288
+        y: 800
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1058,10 +1058,10 @@ TextureImporter:
       name: CP_V1.0.4_19
       rect:
         serializedVersion: 2
-        x: 16
-        y: 800
-        width: 64
-        height: 48
+        x: 401
+        y: 848
+        width: 14
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1080,10 +1080,10 @@ TextureImporter:
       name: CP_V1.0.4_20
       rect:
         serializedVersion: 2
-        x: 112
-        y: 800
-        width: 48
-        height: 48
+        x: 432
+        y: 848
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1102,10 +1102,10 @@ TextureImporter:
       name: CP_V1.0.4_21
       rect:
         serializedVersion: 2
-        x: 288
-        y: 800
-        width: 48
-        height: 48
+        x: 466
+        y: 848
+        width: 10
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1124,10 +1124,10 @@ TextureImporter:
       name: CP_V1.0.4_22
       rect:
         serializedVersion: 2
-        x: 402
+        x: 496
         y: 816
-        width: 12
-        height: 16
+        width: 25
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1146,7 +1146,7 @@ TextureImporter:
       name: CP_V1.0.4_23
       rect:
         serializedVersion: 2
-        x: 434
+        x: 402
         y: 816
         width: 12
         height: 16
@@ -1168,10 +1168,10 @@ TextureImporter:
       name: CP_V1.0.4_24
       rect:
         serializedVersion: 2
-        x: 496
+        x: 434
         y: 816
-        width: 25
-        height: 32
+        width: 12
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1476,10 +1476,10 @@ TextureImporter:
       name: CP_V1.0.4_38
       rect:
         serializedVersion: 2
-        x: 388
-        y: 624
-        width: 8
-        height: 30
+        x: 271
+        y: 574
+        width: 34
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1498,10 +1498,10 @@ TextureImporter:
       name: CP_V1.0.4_39
       rect:
         serializedVersion: 2
-        x: 416
+        x: 388
         y: 624
-        width: 29
-        height: 32
+        width: 8
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1520,10 +1520,10 @@ TextureImporter:
       name: CP_V1.0.4_40
       rect:
         serializedVersion: 2
-        x: 468
+        x: 416
         y: 624
-        width: 7
-        height: 30
+        width: 29
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1542,7 +1542,7 @@ TextureImporter:
       name: CP_V1.0.4_41
       rect:
         serializedVersion: 2
-        x: 500
+        x: 468
         y: 624
         width: 7
         height: 30
@@ -1564,10 +1564,10 @@ TextureImporter:
       name: CP_V1.0.4_42
       rect:
         serializedVersion: 2
-        x: 271
-        y: 574
-        width: 34
-        height: 50
+        x: 500
+        y: 624
+        width: 7
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1586,9 +1586,9 @@ TextureImporter:
       name: CP_V1.0.4_43
       rect:
         serializedVersion: 2
-        x: 388
-        y: 576
-        width: 9
+        x: 16
+        y: 544
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1608,9 +1608,9 @@ TextureImporter:
       name: CP_V1.0.4_44
       rect:
         serializedVersion: 2
-        x: 420
+        x: 388
         y: 576
-        width: 24
+        width: 9
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1630,9 +1630,9 @@ TextureImporter:
       name: CP_V1.0.4_45
       rect:
         serializedVersion: 2
-        x: 468
+        x: 420
         y: 576
-        width: 9
+        width: 24
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1652,10 +1652,10 @@ TextureImporter:
       name: CP_V1.0.4_46
       rect:
         serializedVersion: 2
-        x: 499
+        x: 468
         y: 576
         width: 9
-        height: 31
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1674,10 +1674,10 @@ TextureImporter:
       name: CP_V1.0.4_47
       rect:
         serializedVersion: 2
-        x: 16
-        y: 544
-        width: 64
-        height: 32
+        x: 499
+        y: 576
+        width: 9
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3104,10 +3104,10 @@ TextureImporter:
       name: CP_V1.0.4_112
       rect:
         serializedVersion: 2
-        x: 320
-        y: 241
-        width: 16
-        height: 16
+        x: 322
+        y: 228
+        width: 28
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3434,10 +3434,10 @@ TextureImporter:
       name: CP_V1.0.4_127
       rect:
         serializedVersion: 2
-        x: 336
-        y: 209
-        width: 16
-        height: 16
+        x: 325
+        y: 211
+        width: 24
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3456,8 +3456,8 @@ TextureImporter:
       name: CP_V1.0.4_128
       rect:
         serializedVersion: 2
-        x: 48
-        y: 192
+        x: 16
+        y: 176
         width: 16
         height: 16
       alignment: 0
@@ -3478,7 +3478,7 @@ TextureImporter:
       name: CP_V1.0.4_129
       rect:
         serializedVersion: 2
-        x: 80
+        x: 48
         y: 192
         width: 16
         height: 16
@@ -3500,7 +3500,7 @@ TextureImporter:
       name: CP_V1.0.4_130
       rect:
         serializedVersion: 2
-        x: 400
+        x: 80
         y: 192
         width: 16
         height: 16
@@ -3522,8 +3522,8 @@ TextureImporter:
       name: CP_V1.0.4_131
       rect:
         serializedVersion: 2
-        x: 432
-        y: 192
+        x: 144
+        y: 176
         width: 16
         height: 16
       alignment: 0
@@ -3544,8 +3544,8 @@ TextureImporter:
       name: CP_V1.0.4_132
       rect:
         serializedVersion: 2
-        x: 464
-        y: 192
+        x: 224
+        y: 176
         width: 16
         height: 16
       alignment: 0
@@ -3566,8 +3566,8 @@ TextureImporter:
       name: CP_V1.0.4_133
       rect:
         serializedVersion: 2
-        x: 512
-        y: 192
+        x: 256
+        y: 176
         width: 16
         height: 16
       alignment: 0
@@ -3588,8 +3588,8 @@ TextureImporter:
       name: CP_V1.0.4_134
       rect:
         serializedVersion: 2
-        x: 544
-        y: 192
+        x: 288
+        y: 176
         width: 16
         height: 16
       alignment: 0
@@ -3610,7 +3610,7 @@ TextureImporter:
       name: CP_V1.0.4_135
       rect:
         serializedVersion: 2
-        x: 576
+        x: 400
         y: 192
         width: 16
         height: 16
@@ -3632,7 +3632,7 @@ TextureImporter:
       name: CP_V1.0.4_136
       rect:
         serializedVersion: 2
-        x: 624
+        x: 432
         y: 192
         width: 16
         height: 16
@@ -3654,7 +3654,7 @@ TextureImporter:
       name: CP_V1.0.4_137
       rect:
         serializedVersion: 2
-        x: 656
+        x: 464
         y: 192
         width: 16
         height: 16
@@ -3676,7 +3676,7 @@ TextureImporter:
       name: CP_V1.0.4_138
       rect:
         serializedVersion: 2
-        x: 688
+        x: 512
         y: 192
         width: 16
         height: 16
@@ -3698,8 +3698,8 @@ TextureImporter:
       name: CP_V1.0.4_139
       rect:
         serializedVersion: 2
-        x: 16
-        y: 176
+        x: 544
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -3720,8 +3720,8 @@ TextureImporter:
       name: CP_V1.0.4_140
       rect:
         serializedVersion: 2
-        x: 144
-        y: 176
+        x: 576
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -3742,8 +3742,8 @@ TextureImporter:
       name: CP_V1.0.4_141
       rect:
         serializedVersion: 2
-        x: 224
-        y: 176
+        x: 624
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -3764,8 +3764,8 @@ TextureImporter:
       name: CP_V1.0.4_142
       rect:
         serializedVersion: 2
-        x: 256
-        y: 176
+        x: 656
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -3786,8 +3786,8 @@ TextureImporter:
       name: CP_V1.0.4_143
       rect:
         serializedVersion: 2
-        x: 288
-        y: 176
+        x: 688
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -3810,7 +3810,7 @@ TextureImporter:
         serializedVersion: 2
         x: 70
         y: 167
-        width: 5
+        width: 22
         height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -4244,116 +4244,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: CP_V1.0.4_164
-      rect:
-        serializedVersion: 2
-        x: 87
-        y: 167
-        width: 5
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f7d8cf8b5da2f600800000000000000
-      internalID: 500653117357479925
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CP_V1.0.4_165
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 241
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c7ed96dd5ef520060800000000000000
-      internalID: 6918197418461355644
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CP_V1.0.4_166
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 225
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db50f0cc280a6b2a0800000000000000
-      internalID: -6722008910174157379
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CP_V1.0.4_167
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 225
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 327295aff61e8e3d0800000000000000
-      internalID: -3177041666052118749
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CP_V1.0.4_168
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 209
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d46fc2db450bd6180800000000000000
-      internalID: -9120439792357804467
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -4441,11 +4331,6 @@ TextureImporter:
       CP_V1.0.4_161: -1768169136940656393
       CP_V1.0.4_162: -4884298614618858292
       CP_V1.0.4_163: -4249938587533430718
-      CP_V1.0.4_164: 500653117357479925
-      CP_V1.0.4_165: 6918197418461355644
-      CP_V1.0.4_166: -6722008910174157379
-      CP_V1.0.4_167: -3177041666052118749
-      CP_V1.0.4_168: -9120439792357804467
       CP_V1.0.4_17: -7442772181592641934
       CP_V1.0.4_18: 608085409672713705
       CP_V1.0.4_19: 7534074235166975518
