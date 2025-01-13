@@ -13,6 +13,7 @@ namespace EasyDialogue {
     public struct NodeDialogueOption {
         public string text;
         public Character associatedCharacter;
+        public bool goodAnswer;
         
         public bool isExpanded;
         public Vector2 scrollPos;

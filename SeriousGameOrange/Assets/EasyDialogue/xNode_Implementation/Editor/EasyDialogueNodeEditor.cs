@@ -6,75 +6,55 @@ using System.Reflection;
 
 namespace EasyDialogue {
     [CustomNodeEditor(typeof(EasyDialogueNode))]
-    public class EasyDialogueNodeEditor : XNodeEditor.NodeEditor
-    {
-        private static GUILayoutOption[] textAreaOptions = new GUILayoutOption[]
-{
+    public class EasyDialogueNodeEditor : XNodeEditor.NodeEditor {
+        private static GUILayoutOption[] textAreaOptions = new GUILayoutOption[] {
             UnityEngine.GUILayout.Height(75),
             UnityEngine.GUILayout.MinWidth(100),
             UnityEngine.GUILayout.ExpandWidth(true),
             UnityEngine.GUILayout.ExpandHeight(false),
-};
-        private static GUILayoutOption[] scrollbarOptions = new GUILayoutOption[]
-{
+        };
+        private static GUILayoutOption[] scrollbarOptions = new GUILayoutOption[] {
             UnityEngine.GUILayout.Height(75)
-};
+        };
 
-        private static string TruncateText(string _text, int _maxLen = 25)
-        {
-            if (_text.Length > _maxLen)
-            {
+        private static string TruncateText(string _text, int _maxLen = 25) {
+            if(_text.Length > _maxLen) {
                 return $"{_text.Substring(0, _maxLen)}...";
-            }
-            else
-            {
+            } else {
                 return _text;
             }
         }
 
-        private static string GetResponseText(string _input)
-        {
+        private static string GetResponseText(string _input) {
             return $"Text: {TruncateText(_input)}";
         }
 
         EasyDialogueGraph currGraph;
         EasyDialogueNode easyDialogueNode;
 
-        public override void AddContextMenuItems(GenericMenu menu)
-        {
+        public override void AddContextMenuItems(GenericMenu menu) {
             base.AddContextMenuItems(menu);
             XNode.Node node = Selection.activeObject as XNode.Node;
-            if (Selection.objects.Length == 1 && Selection.activeObject is EasyDialogueNode)
-            {
-                menu.AddItem(new GUIContent("Make Root Node"), false, () =>
-                {
-                    ((EasyDialogueGraph)target.graph).SetRootNode((EasyDialogueNode)node);
-                });
+            if(Selection.objects.Length == 1 && Selection.activeObject is EasyDialogueNode) {
+                menu.AddItem(new GUIContent("Make Root Node"), false, () => { ((EasyDialogueGraph)target.graph).SetRootNode((EasyDialogueNode)node); });
             }
         }
 
-        public override void OnCreate()
-        {
+        public override void OnCreate() {
             InitializeSerializedProperties();
         }
 
-        public override void OnHeaderGUI()
-        {
+        public override void OnHeaderGUI() {
             currGraph = (EasyDialogueGraph)target.graph;
-            if (currGraph.GetRootNode() == target)
-            {
+            if(currGraph.GetRootNode() == target) {
                 UnityEngine.GUILayout.Label($"{target.name} (ROOT NODE)", XNodeEditor.NodeEditorResources.styles.nodeHeader, UnityEngine.GUILayout.Height(30));
-            }
-            else
-            {
+            } else {
                 UnityEngine.GUILayout.Label(target.name, XNodeEditor.NodeEditorResources.styles.nodeHeader, UnityEngine.GUILayout.Height(30));
             }
         }
 
-        public override void OnBodyGUI()
-        {
-            if(easyDialogueNode == null)
-            {
+        public override void OnBodyGUI() {
+            if(easyDialogueNode == null) {
                 InitializeSerializedProperties();
             }
 
@@ -83,17 +63,15 @@ namespace EasyDialogue {
             DrawTopLevelPorts();
             string titleText = "Character Dialogue";
             string dialogueText = easyDialogueNode.characterDialogue.text;
-            if (dialogueText != null && dialogueText != "")
-            {
+            if(dialogueText != null && dialogueText != "") {
                 titleText = TruncateText(dialogueText, 30);
             }
 
             easyDialogueNode.showCharacterDialogue = EditorGUILayout.BeginFoldoutHeaderGroup(easyDialogueNode.showCharacterDialogue, titleText);
-            if (easyDialogueNode.showCharacterDialogue)
-            {
+            if(easyDialogueNode.showCharacterDialogue) {
                 EditorGUILayout.BeginHorizontal();
                 EditorGUILayout.LabelField("Associated Character");
-                easyDialogueNode.characterDialogue.associatedCharacter = (Character) EditorGUILayout.ObjectField(easyDialogueNode.characterDialogue.associatedCharacter, typeof(Character), false);
+                easyDialogueNode.characterDialogue.associatedCharacter = (Character)EditorGUILayout.ObjectField(easyDialogueNode.characterDialogue.associatedCharacter, typeof(Character), false);
                 EditorGUILayout.EndHorizontal();
 
                 GUIStyle style = new GUIStyle(EditorStyles.textArea);
@@ -114,64 +92,45 @@ namespace EasyDialogue {
             easyDialogueNode.hasPlayerResponses = EditorGUILayout.Toggle(easyDialogueNode.hasPlayerResponses);
             EditorGUILayout.EndHorizontal();
 
-            if (easyDialogueNode.hasPlayerResponses)
-            {
+            if(easyDialogueNode.hasPlayerResponses) {
                 DrawPlayerResponses();
-            }
-            else
-            {
+            } else {
                 easyDialogueNode.ClearPlayerResponses();
             }
             serializedObject.ApplyModifiedProperties();
         }
 
-        private void DrawTopLevelPorts()
-        {
+        private void DrawTopLevelPorts() {
             System.Collections.Generic.IEnumerable<XNode.NodePort> ports = easyDialogueNode.Ports;
 
             XNode.NodePort previousNodePort = null;
             XNode.NodePort nextNodePort = null;
-            foreach (XNode.NodePort port in ports)
-            {
-                if (port.fieldName == "previousNodes")
-                {
+            foreach(XNode.NodePort port in ports) {
+                if(port.fieldName == "previousNodes") {
                     previousNodePort = port;
-                }
-                else if (port.fieldName == "nextNode")
-                {
+                } else if(port.fieldName == "nextNode") {
                     nextNodePort = port;
                 }
             }
 
             //If we are the root node, we do NOT want a previous node port.
-            if (currGraph.GetRootNode() == target)
-            {
-                if (!easyDialogueNode.hasPlayerResponses)
-                {
+            if(currGraph.GetRootNode() == target) {
+                if(!easyDialogueNode.hasPlayerResponses) {
                     XNodeEditor.NodeEditorGUILayout.PortField(nextNodePort);
-                }
-                else
-                {
+                } else {
                     EditorGUILayout.Space(30);
                 }
-            }
-            else
-            {
-                if(!easyDialogueNode.hasPlayerResponses)
-                {
+            } else {
+                if(!easyDialogueNode.hasPlayerResponses) {
                     XNodeEditor.NodeEditorGUILayout.PortPair(previousNodePort, nextNodePort);
-                }
-                else
-                {
+                } else {
                     XNodeEditor.NodeEditorGUILayout.PortField(previousNodePort);
                 }
             }
         }
 
-        private void DrawPlayerResponses()
-        {
-            if (easyDialogueNode.playerResponses.Count == 0)
-            {
+        private void DrawPlayerResponses() {
+            if(easyDialogueNode.playerResponses.Count == 0) {
                 Debug.Log($"Adding Player Response! New count = {easyDialogueNode.playerResponses.Count}");
                 easyDialogueNode.AddPlayerResponse();
             }
@@ -181,14 +140,11 @@ namespace EasyDialogue {
             System.Collections.Generic.IEnumerable<XNode.NodePort> ports = easyDialogueNode.Ports;
 
             ++EditorGUI.indentLevel;
-            for (int responceIndex = 0; responceIndex < easyDialogueNode.playerResponses.Count; ++responceIndex)
-            {
+            for(int responceIndex = 0; responceIndex < easyDialogueNode.playerResponses.Count; ++responceIndex) {
                 NodeDialogueOption currResponse = easyDialogueNode.playerResponses[responceIndex];
                 XNode.NodePort playerResponsePort = null;
-                foreach (XNode.NodePort port in ports)
-                {
-                    if (port.fieldName == $"nextNode{responceIndex}")
-                    {
+                foreach(XNode.NodePort port in ports) {
+                    if(port.fieldName == $"nextNode{responceIndex}") {
                         playerResponsePort = port;
                     }
                 }
@@ -198,11 +154,15 @@ namespace EasyDialogue {
                 XNodeEditor.NodeEditorGUILayout.AddPortField(playerResponsePort);
                 EditorGUILayout.EndHorizontal();
 
-                if (EditorGUILayout.BeginFadeGroup(currResponse.isExpanded ? 1 : 0))
-                {
+                if(EditorGUILayout.BeginFadeGroup(currResponse.isExpanded ? 1 : 0)) {
                     currResponse.scrollPos = EditorGUILayout.BeginScrollView(currResponse.scrollPos, GUILayout.Height(75));
                     currResponse.text = EditorGUILayout.TextArea(currResponse.text, textAreaOptions);
                     EditorGUILayout.EndScrollView();
+                    
+                    EditorGUILayout.BeginHorizontal();
+                    EditorGUILayout.LabelField("Good Answer");
+                    currResponse.goodAnswer = EditorGUILayout.Toggle(currResponse.goodAnswer);
+                    EditorGUILayout.EndHorizontal();
                 }
                 EditorGUILayout.EndFadeGroup();
                 easyDialogueNode.playerResponses[responceIndex] = currResponse;
@@ -212,20 +172,17 @@ namespace EasyDialogue {
             bool add = GUILayout.Button("+");
             EditorGUILayout.EndHorizontal();
 
-            if(delete)
-            {
-                easyDialogueNode.RemovePlayerResponse(easyDialogueNode.playerResponses.Count-1);
+            if(delete) {
+                easyDialogueNode.RemovePlayerResponse(easyDialogueNode.playerResponses.Count - 1);
             }
-            if(add)
-            {
+            if(add) {
                 easyDialogueNode.AddPlayerResponse();
             }
             --EditorGUI.indentLevel;
             EditorGUILayout.EndFoldoutHeaderGroup();
         }
 
-        private void InitializeSerializedProperties()
-        {
+        private void InitializeSerializedProperties() {
             easyDialogueNode = (EasyDialogueNode)target;
         }
 
@@ -235,9 +192,7 @@ namespace EasyDialogue {
         /// Draws a line in the node. Color is BLACK.
         /// </summary>
         /// <param name="i_height">box height.</param>
-        protected void GuiLine(int i_height = 1)
-        {
-
+        protected void GuiLine(int i_height = 1) {
             UnityEngine.Rect rect = EditorGUILayout.GetControlRect(false, i_height);
 
             rect.height = i_height;
@@ -250,9 +205,7 @@ namespace EasyDialogue {
         /// </summary>
         /// <param name="_color">color of box.</param>
         /// <param name="i_height">box height.</param>
-        protected void GuiLine(UnityEngine.Color _color, int i_height = 1)
-        {
-
+        protected void GuiLine(UnityEngine.Color _color, int i_height = 1) {
             UnityEngine.Rect rect = EditorGUILayout.GetControlRect(false, i_height);
 
             rect.height = i_height;
@@ -261,5 +214,6 @@ namespace EasyDialogue {
         }
 
         #endregion
+
     }
 }

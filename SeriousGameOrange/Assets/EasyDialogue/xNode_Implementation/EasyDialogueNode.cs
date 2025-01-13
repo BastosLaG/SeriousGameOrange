@@ -68,6 +68,7 @@ namespace EasyDialogue
             NodeDialogueOption curr = new NodeDialogueOption();
             curr.text = "";
             curr.isExpanded = false;
+            curr.goodAnswer = false;
             playerResponses.Add(curr);
             CreateDynamicPort(playerResponses.Count-1);
         }

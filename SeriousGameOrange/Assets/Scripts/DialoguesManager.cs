@@ -16,9 +16,9 @@ public class DialoguesManager : MonoBehaviour {
         easyDialogueManager = GetComponent<EasyDialogueManager>();
 
         //SUPRIMER LES 3 LIGNES UNE FOIS LES TESTS FINI
-        easyDialogueManager.OnDialogueStarted += (EasyDialogueGraph graph, DialogueLine dl) => { Debug.Log($"{dl.Text} was said by {dl.Character}"); };
-        easyDialogueManager.OnDialogueProgressed += (EasyDialogueGraph graph, DialogueLine dl) => { Debug.Log($"{dl.Text} was said by {dl.Character}"); };
-        easyDialogueManager.OnDialogueEnded += (EasyDialogueGraph graph) => Debug.Log($"Dialogue ended on graph {graph.name}");
+        //easyDialogueManager.OnDialogueStarted += (EasyDialogueGraph graph, DialogueLine dl) => { Debug.Log($"{dl.Text} was said by {dl.Character}"); };
+        //easyDialogueManager.OnDialogueProgressed += (EasyDialogueGraph graph, DialogueLine dl) => { Debug.Log($"{dl.Text} was said by {dl.Character}"); };
+        //easyDialogueManager.OnDialogueEnded += (EasyDialogueGraph graph) => Debug.Log($"Dialogue ended on graph {graph.name}");
 
         InitializeDialogue();
     }
@@ -27,7 +27,7 @@ public class DialoguesManager : MonoBehaviour {
         if(Input.GetKeyDown(KeyCode.Space)) {
             if(currentGraph) {
                 // CHANGER LA FACON DE PASSER UN DIALOGUE
-                GetNextDialogue();
+                GetNextDialogue(-1);
             } else {
                 // CHANGER LA FACON DE COMMENCER UN DIALOGUE
                 StartDialogueEncounter(ref graphToPlay);
@@ -43,6 +43,16 @@ public class DialoguesManager : MonoBehaviour {
 
     public void GetNextDialogue(int choiceIndex = 0) {
         if(!currentGraph) return;
+        
+        //On est obligé de choisir une réponse s'il y en a
+        if(currentGraph.HasPlayerResponses() && choiceIndex == -1) {
+            return;
+        }
+        
+        //DIT SI C'EST UNE BONNE OU UNE MAUVAISE RÉPONSE
+        //-1: n'est pas une réponse / 0: mauvaise réponse / 1: bonne réponse
+        Debug.Log(currentGraph.IsGoodAnswer(choiceIndex));
+        
         if(easyDialogueManager.GetNextDialogue(ref currentGraph, out DialogueLine dialogue, (ushort)choiceIndex)) {
             DisplayDialogue(ref dialogue);
         } else {
