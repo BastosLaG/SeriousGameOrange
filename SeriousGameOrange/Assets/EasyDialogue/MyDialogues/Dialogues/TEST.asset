@@ -47,6 +47,7 @@ MonoBehaviour:
     associatedCharacter: {fileID: 11400000, guid: cc18a70df9507e3429ae49bd9b29a66b,
       type: 2}
     goodAnswer: 0
+    idMemory: 
     isExpanded: 0
     scrollPos: {x: 0, y: 0}
   hasPlayerResponses: 0
@@ -107,6 +108,7 @@ MonoBehaviour:
     text: "Qu'importe la r\xE9ponse, je dis ceci apr\xE8s"
     associatedCharacter: {fileID: 0}
     goodAnswer: 0
+    idMemory: 
     isExpanded: 0
     scrollPos: {x: 0, y: 0}
   hasPlayerResponses: 0
@@ -198,6 +200,7 @@ MonoBehaviour:
       corriger))"
     associatedCharacter: {fileID: 0}
     goodAnswer: 0
+    idMemory: 
     isExpanded: 0
     scrollPos: {x: 0, y: 0}
   hasPlayerResponses: 1
@@ -205,17 +208,20 @@ MonoBehaviour:
   - text: Dit coquelicot
     associatedCharacter: {fileID: 0}
     goodAnswer: 1
+    idMemory: coquelicot
     isExpanded: 1
-    scrollPos: {x: 0, y: 4}
+    scrollPos: {x: 0, y: 0}
   - text: que fait 1+1 ?
     associatedCharacter: {fileID: 0}
-    goodAnswer: 0
-    isExpanded: 0
-    scrollPos: {x: 0, y: 4}
+    goodAnswer: 2
+    idMemory: 
+    isExpanded: 1
+    scrollPos: {x: 0, y: 0}
   - text: "Je veux retourner au d\xE9but !"
     associatedCharacter: {fileID: 0}
     goodAnswer: 0
-    isExpanded: 0
+    idMemory: 
+    isExpanded: 1
     scrollPos: {x: 0, y: 4}
   showCharacterDialogue: 1
 --- !u!114 &-4550237206018026542
@@ -267,6 +273,7 @@ MonoBehaviour:
     text: Coquelicot
     associatedCharacter: {fileID: 0}
     goodAnswer: 0
+    idMemory: 
     isExpanded: 0
     scrollPos: {x: 0, y: 0}
   hasPlayerResponses: 0
@@ -334,6 +341,7 @@ MonoBehaviour:
     text: "La r\xE9publique du Congo"
     associatedCharacter: {fileID: 0}
     goodAnswer: 0
+    idMemory: 
     isExpanded: 0
     scrollPos: {x: 0, y: 0}
   hasPlayerResponses: 1
@@ -341,8 +349,9 @@ MonoBehaviour:
   - text: OK
     associatedCharacter: {fileID: 0}
     goodAnswer: 0
+    idMemory: 
     isExpanded: 1
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 4}
   showCharacterDialogue: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -461,6 +470,7 @@ MonoBehaviour:
     text: Je sais
     associatedCharacter: {fileID: 0}
     goodAnswer: 0
+    idMemory: 
     isExpanded: 0
     scrollPos: {x: 0, y: 0}
   hasPlayerResponses: 0
@@ -516,6 +526,7 @@ MonoBehaviour:
     associatedCharacter: {fileID: 11400000, guid: 92989a0b13d4ba8458418ae00256da47,
       type: 2}
     goodAnswer: 0
+    idMemory: 
     isExpanded: 0
     scrollPos: {x: 0, y: 0}
   hasPlayerResponses: 0
@@ -593,18 +604,21 @@ MonoBehaviour:
     text: "c'est la fin de mon test, merci d'avoir \xE9cout\xE9"
     associatedCharacter: {fileID: 0}
     goodAnswer: 0
+    idMemory: 
     isExpanded: 0
     scrollPos: {x: 0, y: 0}
   hasPlayerResponses: 1
   playerResponses:
   - text: "C'\xE9tait incroyable !"
     associatedCharacter: {fileID: 0}
-    goodAnswer: 0
+    goodAnswer: 1
+    idMemory: 
     isExpanded: 1
     scrollPos: {x: 0, y: 0}
   - text: C'est HALLUCINANT !!!
     associatedCharacter: {fileID: 0}
-    goodAnswer: 0
+    goodAnswer: 1
+    idMemory: 
     isExpanded: 1
     scrollPos: {x: 0, y: 0}
   showCharacterDialogue: 1
@@ -657,6 +671,7 @@ MonoBehaviour:
     text: Normalement cela change le texte
     associatedCharacter: {fileID: 0}
     goodAnswer: 0
+    idMemory: 
     isExpanded: 0
     scrollPos: {x: 0, y: 0}
   hasPlayerResponses: 0

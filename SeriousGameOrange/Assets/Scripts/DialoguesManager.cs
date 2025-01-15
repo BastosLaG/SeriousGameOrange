@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using EasyDialogue;
 using UnityEngine;
 using TMPro;
@@ -8,12 +10,14 @@ public class DialoguesManager : MonoBehaviour {
     [SerializeField] private TMP_Text[] playerChoices;
     [SerializeField] private EasyDialogueGraph graphToPlay; //Ne pas en mettre qu'un seul
     [SerializeField] private Canvas myCanvas;
+    public List<string> memory;
 
     private EasyDialogueManager easyDialogueManager;
     private EasyDialogueGraph currentGraph;
 
     private void Start() {
         easyDialogueManager = GetComponent<EasyDialogueManager>();
+        memory = new List<string>();
 
         //SUPRIMER LES 3 LIGNES UNE FOIS LES TESTS FINI
         //easyDialogueManager.OnDialogueStarted += (EasyDialogueGraph graph, DialogueLine dl) => { Debug.Log($"{dl.Text} was said by {dl.Character}"); };
@@ -50,8 +54,16 @@ public class DialoguesManager : MonoBehaviour {
         }
         
         //DIT SI C'EST UNE BONNE OU UNE MAUVAISE RÉPONSE
-        //-1: n'est pas une réponse / 0: mauvaise réponse / 1: bonne réponse
-        Debug.Log(currentGraph.IsGoodAnswer(choiceIndex));
+        //Renvoie un enum AnswerType (None, Good, Bad) [Cf Assets/EasyDialogue/UserFacingAPI/Structs.cs]
+        Debug.Log("GoodAnswer: " + currentGraph.IsGoodAnswer(choiceIndex));
+        
+        //PERMET DE GARDER EN MEMOIRE LES CHOIX DE L'UTILISATEUR
+        //Renvoie une chaine de caractère (Il suffit de rechercher si cette chaine se trouve dans la list memory, cela marche donc comme un boolean)
+        string text = currentGraph.HaveIdentifiantMemory(choiceIndex);
+        Debug.Log("Souvenir: " + text);
+        if(!string.IsNullOrEmpty(text)) {
+            memory.Add(text);
+        }
         
         if(easyDialogueManager.GetNextDialogue(ref currentGraph, out DialogueLine dialogue, (ushort)choiceIndex)) {
             DisplayDialogue(ref dialogue);

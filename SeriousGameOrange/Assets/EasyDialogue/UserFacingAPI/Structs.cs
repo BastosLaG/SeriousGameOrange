@@ -13,9 +13,16 @@ namespace EasyDialogue {
     public struct NodeDialogueOption {
         public string text;
         public Character associatedCharacter;
-        public bool goodAnswer;
+        public AnswerType goodAnswer; // -1 = not a good answer, 0 = neutral, 1 = good answer
+        public string idMemory;
         
         public bool isExpanded;
         public Vector2 scrollPos;
     };
+    
+    public enum AnswerType {
+        None,
+        Good,
+        Bad
+    }
 }

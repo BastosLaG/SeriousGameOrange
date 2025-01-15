@@ -130,11 +130,18 @@ namespace EasyDialogue {
             return result;
         }
         
-        public int IsGoodAnswer(int choiceIndex) {
-            if (currNode == null || choiceIndex < 0 || choiceIndex >= currNode.playerResponses.Count) {
-                return -1;
+        public AnswerType IsGoodAnswer(int choiceIndex) {
+            if (!currNode || choiceIndex < 0 || choiceIndex >= currNode.playerResponses.Count) {
+                return AnswerType.None;
             }
-            return currNode.playerResponses[choiceIndex].goodAnswer ? 1 : 0;
+            return currNode.playerResponses[choiceIndex].goodAnswer;
+        }
+        
+        public string HaveIdentifiantMemory(int choiceIndex) {
+            if (!currNode || choiceIndex < 0 || choiceIndex >= currNode.playerResponses.Count) {
+                return null;
+            }
+            return currNode.playerResponses[choiceIndex].idMemory;
         }
         
         public bool HasPlayerResponses() {

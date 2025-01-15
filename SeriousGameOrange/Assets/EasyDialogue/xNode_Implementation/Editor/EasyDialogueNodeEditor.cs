@@ -160,8 +160,13 @@ namespace EasyDialogue {
                     EditorGUILayout.EndScrollView();
                     
                     EditorGUILayout.BeginHorizontal();
-                    EditorGUILayout.LabelField("Good Answer");
-                    currResponse.goodAnswer = EditorGUILayout.Toggle(currResponse.goodAnswer);
+                    EditorGUILayout.LabelField("Good Answer", GUILayout.Width(100));
+                    currResponse.goodAnswer = (AnswerType)EditorGUILayout.EnumPopup(currResponse.goodAnswer, GUILayout.Width(100));
+                    EditorGUILayout.EndHorizontal();
+                    
+                    EditorGUILayout.BeginHorizontal();
+                    EditorGUILayout.LabelField("ID Memory", GUILayout.Width(80));
+                    currResponse.idMemory = EditorGUILayout.TextField(currResponse.idMemory, GUILayout.Width(180));
                     EditorGUILayout.EndHorizontal();
                 }
                 EditorGUILayout.EndFadeGroup();
