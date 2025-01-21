@@ -477,6 +477,13 @@ PlayerSettings:
       m_Height: 36
       m_Kind: 0
       m_SubKind: 
+  - m_BuildTarget: VisionOS
+    m_Icons:
+    - m_Textures: []
+      m_Width: 1024
+      m_Height: 1024
+      m_Kind: 0
+      m_SubKind: 
   m_BuildTargetBatching: []
   m_BuildTargetShaderSettings: []
   m_BuildTargetGraphicsJobs:
@@ -930,7 +937,7 @@ PlayerSettings:
   cloudProjectId: 5ca1ef38-e4ed-45bb-b970-c9b8597d6d3e
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
+  projectName: SeriousGameOrange 2024-12-10_16-20-27
   organizationId: profanateurs
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
