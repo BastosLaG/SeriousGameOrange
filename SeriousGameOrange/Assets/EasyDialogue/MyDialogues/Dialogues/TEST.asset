@@ -46,6 +46,8 @@ MonoBehaviour:
     text: Ceci est un test (Espace pour passer)
     associatedCharacter: {fileID: 11400000, guid: cc18a70df9507e3429ae49bd9b29a66b,
       type: 2}
+    goodAnswer: 0
+    idMemory: 
     isExpanded: 0
     scrollPos: {x: 0, y: 0}
   hasPlayerResponses: 0
@@ -84,9 +86,6 @@ MonoBehaviour:
       - fieldName: nextNode0
         node: {fileID: -3361123616910999801}
         reroutePoints: []
-      - fieldName: nextNode1
-        node: {fileID: -3361123616910999801}
-        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -108,6 +107,8 @@ MonoBehaviour:
   characterDialogue:
     text: "Qu'importe la r\xE9ponse, je dis ceci apr\xE8s"
     associatedCharacter: {fileID: 0}
+    goodAnswer: 0
+    idMemory: 
     isExpanded: 0
     scrollPos: {x: 0, y: 0}
   hasPlayerResponses: 0
@@ -198,22 +199,30 @@ MonoBehaviour:
     text: "Et je peux faire des choix\n(Espace choisit la premi\xE8re options (\xE0
       corriger))"
     associatedCharacter: {fileID: 0}
+    goodAnswer: 0
+    idMemory: 
     isExpanded: 0
     scrollPos: {x: 0, y: 0}
   hasPlayerResponses: 1
   playerResponses:
   - text: Dit coquelicot
     associatedCharacter: {fileID: 0}
+    goodAnswer: 1
+    idMemory: coquelicot
     isExpanded: 1
     scrollPos: {x: 0, y: 0}
   - text: que fait 1+1 ?
     associatedCharacter: {fileID: 0}
+    goodAnswer: 2
+    idMemory: 
     isExpanded: 1
     scrollPos: {x: 0, y: 0}
   - text: "Je veux retourner au d\xE9but !"
     associatedCharacter: {fileID: 0}
+    goodAnswer: 0
+    idMemory: 
     isExpanded: 1
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 4}
   showCharacterDialogue: 1
 --- !u!114 &-4550237206018026542
 MonoBehaviour:
@@ -263,6 +272,8 @@ MonoBehaviour:
   characterDialogue:
     text: Coquelicot
     associatedCharacter: {fileID: 0}
+    goodAnswer: 0
+    idMemory: 
     isExpanded: 0
     scrollPos: {x: 0, y: 0}
   hasPlayerResponses: 0
@@ -287,7 +298,6 @@ MonoBehaviour:
     - previousNodes
     - nextNode
     - nextNode0
-    - nextNode1
     values:
     - _fieldName: previousNodes
       _node: {fileID: -3361123616910999801}
@@ -325,35 +335,23 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 1
       _dynamic: 1
-    - _fieldName: nextNode1
-      _node: {fileID: -3361123616910999801}
-      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: previousNodes
-        node: {fileID: -5241252598741945366}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 1
-      _typeConstraint: 1
-      _dynamic: 1
   previousNodes: {fileID: 0}
   nextNode: {fileID: 0}
   characterDialogue:
     text: "La r\xE9publique du Congo"
     associatedCharacter: {fileID: 0}
+    goodAnswer: 0
+    idMemory: 
     isExpanded: 0
     scrollPos: {x: 0, y: 0}
   hasPlayerResponses: 1
   playerResponses:
-  - text: Pourquoi dire cela...
+  - text: OK
     associatedCharacter: {fileID: 0}
+    goodAnswer: 0
+    idMemory: 
     isExpanded: 1
-    scrollPos: {x: 0, y: 0}
-  - text: Ehhh... Non
-    associatedCharacter: {fileID: 0}
-    isExpanded: 1
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 4}
   showCharacterDialogue: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -471,6 +469,8 @@ MonoBehaviour:
   characterDialogue:
     text: Je sais
     associatedCharacter: {fileID: 0}
+    goodAnswer: 0
+    idMemory: 
     isExpanded: 0
     scrollPos: {x: 0, y: 0}
   hasPlayerResponses: 0
@@ -525,6 +525,8 @@ MonoBehaviour:
     text: Et en fin, je peux facilement changer qui parle
     associatedCharacter: {fileID: 11400000, guid: 92989a0b13d4ba8458418ae00256da47,
       type: 2}
+    goodAnswer: 0
+    idMemory: 
     isExpanded: 0
     scrollPos: {x: 0, y: 0}
   hasPlayerResponses: 0
@@ -601,16 +603,22 @@ MonoBehaviour:
   characterDialogue:
     text: "c'est la fin de mon test, merci d'avoir \xE9cout\xE9"
     associatedCharacter: {fileID: 0}
+    goodAnswer: 0
+    idMemory: 
     isExpanded: 0
     scrollPos: {x: 0, y: 0}
   hasPlayerResponses: 1
   playerResponses:
   - text: "C'\xE9tait incroyable !"
     associatedCharacter: {fileID: 0}
+    goodAnswer: 1
+    idMemory: 
     isExpanded: 1
     scrollPos: {x: 0, y: 0}
   - text: C'est HALLUCINANT !!!
     associatedCharacter: {fileID: 0}
+    goodAnswer: 1
+    idMemory: 
     isExpanded: 1
     scrollPos: {x: 0, y: 0}
   showCharacterDialogue: 1
@@ -662,6 +670,8 @@ MonoBehaviour:
   characterDialogue:
     text: Normalement cela change le texte
     associatedCharacter: {fileID: 0}
+    goodAnswer: 0
+    idMemory: 
     isExpanded: 0
     scrollPos: {x: 0, y: 0}
   hasPlayerResponses: 0
