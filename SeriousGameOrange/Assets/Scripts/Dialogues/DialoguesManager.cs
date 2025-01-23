@@ -13,6 +13,9 @@ public class DialoguesManager : MonoBehaviour {
     [SerializeField] private Canvas myCanvas;
     public List<string> memory;
 
+    [SerializeField] private RectTransform dialogueTransform;
+    private Dictionary<Character, Transform> characters;
+
     private EasyDialogueManager easyDialogueManager;
     private EasyDialogueGraph currentGraph;
     private UnityEvent callback;
@@ -23,12 +26,15 @@ public class DialoguesManager : MonoBehaviour {
         } else {
             Destroy(gameObject);
         }
+        
+        characters = new Dictionary<Character, Transform>();
     }
 
     private void Start() {
         easyDialogueManager = GetComponent<EasyDialogueManager>();
         memory = new List<string>();
         InitializeDialogue();
+        FindGameObjectForText();
     }
 
     void Update() {
@@ -36,6 +42,13 @@ public class DialoguesManager : MonoBehaviour {
             if(currentGraph) {
                 GetNextDialogue(-1);
             }
+        }
+    }
+
+    public void FindGameObjectForText() {
+        PersonGameObject[] persons = FindObjectsByType<PersonGameObject>(FindObjectsSortMode.None);
+        foreach (PersonGameObject person in persons) {
+            characters.Add(person.character, person.transform);
         }
     }
 
@@ -89,6 +102,11 @@ public class DialoguesManager : MonoBehaviour {
     }
 
     private void DisplayDialogue(ref DialogueLine dialogue) {
+        if (characters.TryGetValue(dialogue.Character, out Transform characterTransform)) {
+            Vector2 screenPoint = Camera.main.transform.InverseTransformPoint(characterTransform.position);
+            dialogueTransform.localPosition = new Vector3(screenPoint.x * 960 / 9, screenPoint.y * 108, 0);
+        }
+        
         ShowCharacterDialogue(dialogue.Character, dialogue.Text);
         HidePlayerResponses();
         if(dialogue.HasPlayerResponses()) {
