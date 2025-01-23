@@ -1,48 +1,50 @@
-using System.Collections;
 using System.Collections.Generic;
 using EasyDialogue;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
 
 public class DialoguesManager : MonoBehaviour {
+    public static DialoguesManager Instance { get; private set; }
+    
     [SerializeField] private TMP_Text textBoxName;
     [SerializeField] private TMP_Text textBox;
     [SerializeField] private TMP_Text[] playerChoices;
-    [SerializeField] private EasyDialogueGraph graphToPlay; //Ne pas en mettre qu'un seul
     [SerializeField] private Canvas myCanvas;
     public List<string> memory;
 
     private EasyDialogueManager easyDialogueManager;
     private EasyDialogueGraph currentGraph;
+    private UnityEvent callback;
+
+    private void Awake() {
+        if(Instance == null) {
+            Instance = this;
+        } else {
+            Destroy(gameObject);
+        }
+    }
 
     private void Start() {
         easyDialogueManager = GetComponent<EasyDialogueManager>();
         memory = new List<string>();
-
-        //SUPRIMER LES 3 LIGNES UNE FOIS LES TESTS FINI
-        //easyDialogueManager.OnDialogueStarted += (EasyDialogueGraph graph, DialogueLine dl) => { Debug.Log($"{dl.Text} was said by {dl.Character}"); };
-        //easyDialogueManager.OnDialogueProgressed += (EasyDialogueGraph graph, DialogueLine dl) => { Debug.Log($"{dl.Text} was said by {dl.Character}"); };
-        //easyDialogueManager.OnDialogueEnded += (EasyDialogueGraph graph) => Debug.Log($"Dialogue ended on graph {graph.name}");
-
         InitializeDialogue();
     }
 
     void Update() {
         if(Input.GetKeyDown(KeyCode.Space)) {
             if(currentGraph) {
-                // CHANGER LA FACON DE PASSER UN DIALOGUE
                 GetNextDialogue(-1);
-            } else {
-                // CHANGER LA FACON DE COMMENCER UN DIALOGUE
-                StartDialogueEncounter(ref graphToPlay);
             }
         }
     }
 
-    public void StartDialogueEncounter(ref EasyDialogueGraph dialogueGraph) {
+    public void StartDialogueEncounter(ref EasyDialogueGraph dialogueGraph, UnityEvent fonction = null) {
         currentGraph = dialogueGraph;
         DialogueLine dialogue = easyDialogueManager.StartDialogueEncounter(ref dialogueGraph);
         DisplayDialogue(ref dialogue);
+        callback = fonction;
+        DeplacementPourTestDialogues.Instance.canMove = false;
     }
 
     public void GetNextDialogue(int choiceIndex = 0) {
@@ -75,6 +77,8 @@ public class DialoguesManager : MonoBehaviour {
     public void EndDialogue() {
         if(easyDialogueManager.EndDialogueEncounter(ref currentGraph)) {
             InitializeDialogue();
+            callback?.Invoke();
+            DeplacementPourTestDialogues.Instance.canMove = true;
         }
     }
 
