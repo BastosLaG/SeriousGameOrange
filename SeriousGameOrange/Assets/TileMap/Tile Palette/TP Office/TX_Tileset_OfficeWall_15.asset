@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: TX_Tileset_OfficeWall_15
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -543647850, guid: 1d5b70982a4c0824085fd841a881de5d, type: 3}
+  m_Sprite: {fileID: -443683261, guid: ebd13507312a0544681b38d233742880, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
