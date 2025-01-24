@@ -1,0 +1,182 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-521994199921824624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f29d5d8a82bd44d9b748619b1c3d5a, type: 3}
+  m_Name: Easy Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 344, y: 8}
+  ports:
+    keys:
+    - previousNodes
+    - nextNode
+    values:
+    - _fieldName: previousNodes
+      _node: {fileID: -521994199921824624}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextNode
+        node: {fileID: 1649806748811514364}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: -521994199921824624}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNodes: {fileID: 0}
+  nextNode: {fileID: 0}
+  characterDialogue:
+    text: Bien, allons y !
+    associatedCharacter: {fileID: 11400000, guid: 3fd64bfad8bdf8640adee6b8dda61f52,
+      type: 2}
+    goodAnswer: 0
+    idMemory: 
+    isExpanded: 0
+    scrollPos: {x: 0, y: 0}
+  hasPlayerResponses: 0
+  playerResponses: []
+  showCharacterDialogue: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7befb70d5e55a249abca6d95331ef58, type: 3}
+  m_Name: ChezClient 3 - Technicien
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 3461973455687426262}
+  - {fileID: 1649806748811514364}
+  - {fileID: -521994199921824624}
+  root: {fileID: 3461973455687426262}
+--- !u!114 &1649806748811514364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f29d5d8a82bd44d9b748619b1c3d5a, type: 3}
+  m_Name: Easy Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 24, y: 8}
+  ports:
+    keys:
+    - previousNodes
+    - nextNode
+    values:
+    - _fieldName: previousNodes
+      _node: {fileID: 1649806748811514364}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextNode
+        node: {fileID: 3461973455687426262}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: 1649806748811514364}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNodes
+        node: {fileID: -521994199921824624}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNodes: {fileID: 0}
+  nextNode: {fileID: 0}
+  characterDialogue:
+    text: Oui, je crois qu'on peut partir.
+    associatedCharacter: {fileID: 11400000, guid: db9f7c620c2e5f24cbe3fe62c423f2b1,
+      type: 2}
+    goodAnswer: 0
+    idMemory: 
+    isExpanded: 0
+    scrollPos: {x: 0, y: 0}
+  hasPlayerResponses: 0
+  playerResponses: []
+  showCharacterDialogue: 1
+--- !u!114 &3461973455687426262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f29d5d8a82bd44d9b748619b1c3d5a, type: 3}
+  m_Name: Easy Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -296, y: 8}
+  ports:
+    keys:
+    - previousNodes
+    - nextNode
+    values:
+    - _fieldName: previousNodes
+      _node: {fileID: 3461973455687426262}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: 3461973455687426262}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNodes
+        node: {fileID: 1649806748811514364}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNodes: {fileID: 0}
+  nextNode: {fileID: 0}
+  characterDialogue:
+    text: "On a termin\xE9 l\u2019installation de l\u2019\xE9quipement. Tu as r\xE9ussi
+      \xE0 accomplir ta mission ?"
+    associatedCharacter: {fileID: 11400000, guid: 3fd64bfad8bdf8640adee6b8dda61f52,
+      type: 2}
+    goodAnswer: 0
+    idMemory: 
+    isExpanded: 0
+    scrollPos: {x: 0, y: 0}
+  hasPlayerResponses: 0
+  playerResponses: []
+  showCharacterDialogue: 1

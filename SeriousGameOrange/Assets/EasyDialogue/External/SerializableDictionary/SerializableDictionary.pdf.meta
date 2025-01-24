@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8eb73a56b3a6ee64ab2c30cac8878d8f
+timeCreated: 1492869030
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169776
+  packageName: Easy Dialogue
+  packageVersion: 1.06.00
+  assetPath: Assets/EasyDialogue/External/SerializableDictionary/SerializableDictionary.pdf
+  uploadId: 462288

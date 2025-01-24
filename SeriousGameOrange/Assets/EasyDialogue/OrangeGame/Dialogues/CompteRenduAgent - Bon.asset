@@ -1,0 +1,299 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2022728237143012366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f29d5d8a82bd44d9b748619b1c3d5a, type: 3}
+  m_Name: Easy Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 984, y: 8}
+  ports:
+    keys:
+    - previousNodes
+    - nextNode
+    values:
+    - _fieldName: previousNodes
+      _node: {fileID: -2022728237143012366}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextNode
+        node: {fileID: 128246617050894827}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: -2022728237143012366}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNodes: {fileID: 0}
+  nextNode: {fileID: 0}
+  characterDialogue:
+    text: "Je ne vais donc pas te retenir plus longtemps, continue \xE0 faire du
+      bon travail !"
+    associatedCharacter: {fileID: 11400000, guid: 2fe73176d4e933546b7e97b7d87725f6,
+      type: 2}
+    goodAnswer: 0
+    idMemory: 
+    isExpanded: 0
+    scrollPos: {x: 0, y: 0}
+  hasPlayerResponses: 0
+  playerResponses: []
+  showCharacterDialogue: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7befb70d5e55a249abca6d95331ef58, type: 3}
+  m_Name: CompteRenduAgent - Bon
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 3802957953704878316}
+  - {fileID: -2022728237143012366}
+  - {fileID: 128246617050894827}
+  - {fileID: 1724568154036249371}
+  - {fileID: 2335163153711390948}
+  root: {fileID: 3802957953704878316}
+--- !u!114 &128246617050894827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f29d5d8a82bd44d9b748619b1c3d5a, type: 3}
+  m_Name: Easy Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 664, y: 8}
+  ports:
+    keys:
+    - previousNodes
+    - nextNode
+    values:
+    - _fieldName: previousNodes
+      _node: {fileID: 128246617050894827}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextNode
+        node: {fileID: 1724568154036249371}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: 128246617050894827}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNodes
+        node: {fileID: -2022728237143012366}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNodes: {fileID: 0}
+  nextNode: {fileID: 0}
+  characterDialogue:
+    text: "Ton Maitre de stage te cherche. Je pense qu'il a une t\xE2che importante
+      pour toi. "
+    associatedCharacter: {fileID: 11400000, guid: 2fe73176d4e933546b7e97b7d87725f6,
+      type: 2}
+    goodAnswer: 0
+    idMemory: 
+    isExpanded: 0
+    scrollPos: {x: 0, y: 0}
+  hasPlayerResponses: 0
+  playerResponses: []
+  showCharacterDialogue: 1
+--- !u!114 &1724568154036249371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f29d5d8a82bd44d9b748619b1c3d5a, type: 3}
+  m_Name: Easy Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 344, y: 8}
+  ports:
+    keys:
+    - previousNodes
+    - nextNode
+    values:
+    - _fieldName: previousNodes
+      _node: {fileID: 1724568154036249371}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextNode
+        node: {fileID: 2335163153711390948}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: 1724568154036249371}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNodes
+        node: {fileID: 128246617050894827}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNodes: {fileID: 0}
+  nextNode: {fileID: 0}
+  characterDialogue:
+    text: Tu as bien fait de citer un fait mal connu. Ce genre de truc accroche toujours
+      les clients.
+    associatedCharacter: {fileID: 11400000, guid: 2fe73176d4e933546b7e97b7d87725f6,
+      type: 2}
+    goodAnswer: 0
+    idMemory: 
+    isExpanded: 0
+    scrollPos: {x: 0, y: 0}
+  hasPlayerResponses: 0
+  playerResponses: []
+  showCharacterDialogue: 1
+--- !u!114 &2335163153711390948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f29d5d8a82bd44d9b748619b1c3d5a, type: 3}
+  m_Name: Easy Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 24, y: 8}
+  ports:
+    keys:
+    - previousNodes
+    - nextNode
+    values:
+    - _fieldName: previousNodes
+      _node: {fileID: 2335163153711390948}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextNode
+        node: {fileID: 3802957953704878316}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: 2335163153711390948}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNodes
+        node: {fileID: 1724568154036249371}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNodes: {fileID: 0}
+  nextNode: {fileID: 0}
+  characterDialogue:
+    text: "Pas mal pour une premi\xE8re fois ! On devrait t\u2019envoyer chez les
+      clients plus souvent !"
+    associatedCharacter: {fileID: 11400000, guid: 2fe73176d4e933546b7e97b7d87725f6,
+      type: 2}
+    goodAnswer: 0
+    idMemory: 
+    isExpanded: 0
+    scrollPos: {x: 0, y: 0}
+  hasPlayerResponses: 0
+  playerResponses: []
+  showCharacterDialogue: 1
+--- !u!114 &3802957953704878316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f29d5d8a82bd44d9b748619b1c3d5a, type: 3}
+  m_Name: Easy Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -296, y: 8}
+  ports:
+    keys:
+    - previousNodes
+    - nextNode
+    values:
+    - _fieldName: previousNodes
+      _node: {fileID: 3802957953704878316}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: 3802957953704878316}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNodes
+        node: {fileID: 2335163153711390948}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNodes: {fileID: 0}
+  nextNode: {fileID: 0}
+  characterDialogue:
+    text: J'ai entendu parler de tes resultats.
+    associatedCharacter: {fileID: 11400000, guid: 2fe73176d4e933546b7e97b7d87725f6,
+      type: 2}
+    goodAnswer: 0
+    idMemory: 
+    isExpanded: 0
+    scrollPos: {x: 0, y: 0}
+  hasPlayerResponses: 0
+  playerResponses: []
+  showCharacterDialogue: 1

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 23f29d5d8a82bd44d9b748619b1c3d5a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169776
+  packageName: Easy Dialogue
+  packageVersion: 1.06.00
+  assetPath: Assets/EasyDialogue/Internal/Scripts/xNode_Implementation/EasyDialogueNode.cs
+  uploadId: 462288

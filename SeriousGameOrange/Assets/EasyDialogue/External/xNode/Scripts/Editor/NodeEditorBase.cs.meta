@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: e85122ded59aceb4eb4b1bd9d9202642
+timeCreated: 1511353946
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169776
+  packageName: Easy Dialogue
+  packageVersion: 1.06.00
+  assetPath: Assets/EasyDialogue/External/xNode/Scripts/Editor/NodeEditorBase.cs
+  uploadId: 462288

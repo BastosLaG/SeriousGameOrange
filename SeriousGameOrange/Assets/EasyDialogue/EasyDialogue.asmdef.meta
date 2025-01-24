@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0372de2521526a44b8d3d6ef180532b6
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169776
+  packageName: Easy Dialogue
+  packageVersion: 1.06.00
+  assetPath: Assets/EasyDialogue/Internal/Scripts/EasyDialogue.asmdef
+  uploadId: 462288
