@@ -4,5 +4,39 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/0_Menu.unity
+    guid: 91fb9219eb3dcce4c8d5680b1fb3cdc0
+  - enabled: 1
+    path: Assets/Scenes/1_1_BureauCentral.unity
+    guid: ba8dbc5b6a96950499d7c370ef43767d
+  - enabled: 1
+    path: Assets/Scenes/1_2_BureauServiceClient.unity
+    guid: e4621a08d9fa41948815e4968b935094
+  - enabled: 1
+    path: Assets/Scenes/1_3_Antenne4G.unity
+    guid: 37dfecfdbfc95104f879f5d80aca1030
+  - enabled: 1
+    path: Assets/Scenes/1_4_BureauMarketing.unity
+    guid: a8ede378df53b9d459d15a49452ba79a
+  - enabled: 1
+    path: Assets/Scenes/1_5_BureauCentral.unity
+    guid: 8219b3294ee63ce45a228081c93edbfe
+  - enabled: 1
+    path: Assets/Scenes/2_1_AppelTelephonique.unity
+    guid: ed2cb651f6a6b384f89563e8a8837146
+  - enabled: 1
+    path: Assets/Scenes/2_2_BureauMarketing.unity
+    guid: bf3d8879fc15ada4e8cfca1d1af17f2c
+  - enabled: 1
+    path: Assets/Scenes/2_3_Client.unity
+    guid: e5154b41764c8614fb368953148cd90c
+  - enabled: 1
+    path: Assets/Scenes/2_4_BureauMarketing.unity
+    guid: b75db8c91c9a37443b829e2cb414da53
+  - enabled: 1
+    path: Assets/Scenes/9_9_END.unity
+    guid: b51cbbc33738690419a3d09c3504541c
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
