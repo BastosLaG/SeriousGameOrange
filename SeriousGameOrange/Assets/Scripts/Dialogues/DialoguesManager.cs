@@ -15,6 +15,7 @@ public class DialoguesManager : MonoBehaviour {
 
     [SerializeField] private RectTransform dialogueTransform;
     private Dictionary<Character, Transform> characters;
+    private PlayerMouvement playerMouvement;
 
     private EasyDialogueManager easyDialogueManager;
     private EasyDialogueGraph currentGraph;
@@ -34,6 +35,7 @@ public class DialoguesManager : MonoBehaviour {
         easyDialogueManager = GetComponent<EasyDialogueManager>();
         memory = new List<string>();
         InitializeDialogue();
+        playerMouvement = FindFirstObjectByType<PlayerMouvement>();
         FindGameObjectForText();
     }
 
@@ -57,7 +59,8 @@ public class DialoguesManager : MonoBehaviour {
         DialogueLine dialogue = easyDialogueManager.StartDialogueEncounter(ref dialogueGraph);
         DisplayDialogue(ref dialogue);
         callback = fonction;
-        DeplacementPourTestDialogues.Instance.canMove = false;
+        
+        playerMouvement.Interact(false);
     }
 
     public void GetNextDialogue(int choiceIndex = 0) {
@@ -91,7 +94,7 @@ public class DialoguesManager : MonoBehaviour {
         if(easyDialogueManager.EndDialogueEncounter(ref currentGraph)) {
             InitializeDialogue();
             callback?.Invoke();
-            DeplacementPourTestDialogues.Instance.canMove = true;
+            playerMouvement.Interact(true);
         }
     }
 
@@ -103,7 +106,7 @@ public class DialoguesManager : MonoBehaviour {
 
     private void DisplayDialogue(ref DialogueLine dialogue) {
         if (characters.TryGetValue(dialogue.Character, out Transform characterTransform)) {
-            Vector2 screenPoint = Camera.main.transform.InverseTransformPoint(characterTransform.position);
+            Vector2 screenPoint = GameObject.Find("Camera").transform.InverseTransformPoint(characterTransform.position);
             dialogueTransform.localPosition = new Vector3(screenPoint.x * 960 / 9, screenPoint.y * 108, 0);
         }
         

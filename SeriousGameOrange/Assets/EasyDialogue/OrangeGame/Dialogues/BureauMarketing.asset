@@ -278,7 +278,7 @@ MonoBehaviour:
     goodAnswer: 0
     idMemory: 
     isExpanded: 1
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 4}
   showCharacterDialogue: 1
 --- !u!114 &-3634636231745702464
 MonoBehaviour:
@@ -622,7 +622,10 @@ MonoBehaviour:
       _node: {fileID: 128246617050894827}
       _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: nextNode
+        node: {fileID: 1724568154036249371}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -691,7 +694,10 @@ MonoBehaviour:
       _node: {fileID: 1724568154036249371}
       _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: previousNodes
+        node: {fileID: 128246617050894827}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -796,7 +802,7 @@ MonoBehaviour:
     goodAnswer: 0
     idMemory: 
     isExpanded: 1
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 4}
   - text: "Quelque chose \xE0 propos de transition \xE9cologique ? "
     associatedCharacter: {fileID: 0}
     goodAnswer: 0
