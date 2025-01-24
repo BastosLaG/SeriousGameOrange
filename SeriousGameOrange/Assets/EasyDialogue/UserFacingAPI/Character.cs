@@ -4,6 +4,5 @@ namespace EasyDialogue {
     [CreateAssetMenu(fileName = "EasyDialogueCharacter", menuName = "EasyDialogue/Character")]
     public class Character : ScriptableObject {
         public string displayName;
-        public GameObject personnage;
     }
 }

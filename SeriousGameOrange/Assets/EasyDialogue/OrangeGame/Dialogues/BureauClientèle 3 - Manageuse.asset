@@ -1,0 +1,411 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8163173587315266960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f29d5d8a82bd44d9b748619b1c3d5a, type: 3}
+  m_Name: Easy Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 40, y: 8}
+  ports:
+    keys:
+    - previousNodes
+    - nextNode
+    values:
+    - _fieldName: previousNodes
+      _node: {fileID: -8163173587315266960}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextNode
+        node: {fileID: 3461973455687426262}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: -8163173587315266960}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNodes
+        node: {fileID: 3662446527480216089}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNodes: {fileID: 0}
+  nextNode: {fileID: 0}
+  characterDialogue:
+    text: "Oui, \xE7'est bon ! Puis-je vous conseiller de supprimer ces mails apr\xE8s
+      y avoir r\xE9pondu ?"
+    associatedCharacter: {fileID: 11400000, guid: db9f7c620c2e5f24cbe3fe62c423f2b1,
+      type: 2}
+    goodAnswer: 0
+    idMemory: 
+    isExpanded: 0
+    scrollPos: {x: 0, y: 0}
+  hasPlayerResponses: 0
+  playerResponses: []
+  showCharacterDialogue: 1
+--- !u!114 &-5939127167893135019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f29d5d8a82bd44d9b748619b1c3d5a, type: 3}
+  m_Name: Easy Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1048, y: 8}
+  ports:
+    keys:
+    - previousNodes
+    - nextNode
+    values:
+    - _fieldName: previousNodes
+      _node: {fileID: -5939127167893135019}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextNode
+        node: {fileID: -4042068278539520775}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: -5939127167893135019}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNodes
+        node: {fileID: 574640916147156260}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNodes: {fileID: 0}
+  nextNode: {fileID: 0}
+  characterDialogue:
+    text: Je ne le savais pas ! Je mettrais tous les documents dans un drive !
+    associatedCharacter: {fileID: 11400000, guid: 723e8666d09feff43ab50c70be9b36e7,
+      type: 2}
+    goodAnswer: 0
+    idMemory: 
+    isExpanded: 0
+    scrollPos: {x: 0, y: 0}
+  hasPlayerResponses: 0
+  playerResponses: []
+  showCharacterDialogue: 1
+--- !u!114 &-4042068278539520775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f29d5d8a82bd44d9b748619b1c3d5a, type: 3}
+  m_Name: Easy Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 712, y: 8}
+  ports:
+    keys:
+    - previousNodes
+    - nextNode
+    values:
+    - _fieldName: previousNodes
+      _node: {fileID: -4042068278539520775}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextNode
+        node: {fileID: 3662446527480216089}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: -4042068278539520775}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNodes
+        node: {fileID: -5939127167893135019}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNodes: {fileID: 0}
+  nextNode: {fileID: 0}
+  characterDialogue:
+    text: "Un mail avec une pi\xE8ce jointe c'est un 35g de CO2"
+    associatedCharacter: {fileID: 11400000, guid: db9f7c620c2e5f24cbe3fe62c423f2b1,
+      type: 2}
+    goodAnswer: 0
+    idMemory: 
+    isExpanded: 0
+    scrollPos: {x: 0, y: 0}
+  hasPlayerResponses: 0
+  playerResponses: []
+  showCharacterDialogue: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7befb70d5e55a249abca6d95331ef58, type: 3}
+  m_Name: "BureauClient\xE8le 3 - Manageuse"
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 3461973455687426262}
+  - {fileID: 3662446527480216089}
+  - {fileID: -8163173587315266960}
+  - {fileID: 574640916147156260}
+  - {fileID: -5939127167893135019}
+  - {fileID: 5132401242319198560}
+  - {fileID: -4042068278539520775}
+  root: {fileID: 3461973455687426262}
+--- !u!114 &574640916147156260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f29d5d8a82bd44d9b748619b1c3d5a, type: 3}
+  m_Name: Easy Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1384, y: 8}
+  ports:
+    keys:
+    - previousNodes
+    - nextNode
+    values:
+    - _fieldName: previousNodes
+      _node: {fileID: 574640916147156260}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextNode
+        node: {fileID: -5939127167893135019}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: 574640916147156260}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNodes
+        node: {fileID: 5132401242319198560}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNodes: {fileID: 0}
+  nextNode: {fileID: 0}
+  characterDialogue:
+    text: Merci pour votre assistance. Nous prenons la suite.
+    associatedCharacter: {fileID: 11400000, guid: 723e8666d09feff43ab50c70be9b36e7,
+      type: 2}
+    goodAnswer: 0
+    idMemory: 
+    isExpanded: 0
+    scrollPos: {x: 0, y: 0}
+  hasPlayerResponses: 0
+  playerResponses: []
+  showCharacterDialogue: 1
+--- !u!114 &3461973455687426262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f29d5d8a82bd44d9b748619b1c3d5a, type: 3}
+  m_Name: Easy Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -296, y: 8}
+  ports:
+    keys:
+    - previousNodes
+    - nextNode
+    values:
+    - _fieldName: previousNodes
+      _node: {fileID: 3461973455687426262}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: 3461973455687426262}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNodes
+        node: {fileID: -8163173587315266960}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNodes: {fileID: 0}
+  nextNode: {fileID: 0}
+  characterDialogue:
+    text: "Excusez-moi, j'\xE9tais occup\xE9e avec des mails et je n'ai pas entendu
+      votre conversation. Tout s'est bien pass\xE9 ?"
+    associatedCharacter: {fileID: 11400000, guid: 723e8666d09feff43ab50c70be9b36e7,
+      type: 2}
+    goodAnswer: 0
+    idMemory: 
+    isExpanded: 0
+    scrollPos: {x: 0, y: 0}
+  hasPlayerResponses: 0
+  playerResponses: []
+  showCharacterDialogue: 1
+--- !u!114 &3662446527480216089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f29d5d8a82bd44d9b748619b1c3d5a, type: 3}
+  m_Name: Easy Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 376, y: 8}
+  ports:
+    keys:
+    - previousNodes
+    - nextNode
+    values:
+    - _fieldName: previousNodes
+      _node: {fileID: 3662446527480216089}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextNode
+        node: {fileID: -8163173587315266960}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: 3662446527480216089}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNodes
+        node: {fileID: -4042068278539520775}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNodes: {fileID: 0}
+  nextNode: {fileID: 0}
+  characterDialogue:
+    text: Les supprimer ? Pourquoi ?
+    associatedCharacter: {fileID: 11400000, guid: 723e8666d09feff43ab50c70be9b36e7,
+      type: 2}
+    goodAnswer: 0
+    idMemory: 
+    isExpanded: 0
+    scrollPos: {x: 0, y: 0}
+  hasPlayerResponses: 0
+  playerResponses: []
+  showCharacterDialogue: 1
+--- !u!114 &5132401242319198560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f29d5d8a82bd44d9b748619b1c3d5a, type: 3}
+  m_Name: Easy Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1720, y: 8}
+  ports:
+    keys:
+    - previousNodes
+    - nextNode
+    values:
+    - _fieldName: previousNodes
+      _node: {fileID: 5132401242319198560}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextNode
+        node: {fileID: 574640916147156260}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: 5132401242319198560}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNodes: {fileID: 0}
+  nextNode: {fileID: 0}
+  characterDialogue:
+    text: "Bon courage avec des autres t\xE2ches !"
+    associatedCharacter: {fileID: 11400000, guid: 723e8666d09feff43ab50c70be9b36e7,
+      type: 2}
+    goodAnswer: 0
+    idMemory: 
+    isExpanded: 0
+    scrollPos: {x: 0, y: 0}
+  hasPlayerResponses: 0
+  playerResponses: []
+  showCharacterDialogue: 1
