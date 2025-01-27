@@ -21,6 +21,8 @@ public class DialoguesManager : MonoBehaviour {
     private EasyDialogueGraph currentGraph;
     private UnityEvent callback;
 
+    public NextLevel door;
+
     private void Awake() {
         if(Instance == null) {
             Instance = this;
@@ -136,5 +138,12 @@ public class DialoguesManager : MonoBehaviour {
             playerChoices[i].text = responses[i];
             playerChoices[i].transform.parent.gameObject.SetActive(true);
         }
+    }
+
+    public void ChangeMapFor() {
+        //switch (memory[0]) {
+        //    case "goTechnicien":
+        //        door.WhichMap(3);
+        //}
     }
 }
