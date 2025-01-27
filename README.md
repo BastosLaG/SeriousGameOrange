@@ -5,7 +5,7 @@
 - 6000.0.24f1
 
 ## Sources
-
+Musique par Philémon Weber (Helmet). Merci pour votre travail !
 ### MetroCity (characters):
 https://jik-a-4.itch.io/metrocity-free-topdown-character-pack
 ### Pixel Art Top Down - Basic (Sprites):
