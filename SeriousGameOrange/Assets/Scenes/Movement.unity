@@ -2158,6 +2158,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7256717672906424386, guid: b7369fc184ba7f9429e0943e2118b38b,
         type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7256717672906424386, guid: b7369fc184ba7f9429e0943e2118b38b,
+        type: 3}
       propertyPath: m_AngularDamping
       value: 0
       objectReference: {fileID: 0}
