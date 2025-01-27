@@ -6,7 +6,7 @@ public class GoodOrBad : MonoBehaviour {
     [SerializeField] private EasyDialogueGraph bad;
     
     private void Start() {
-        if (DialoguesManager.Instance.memory.Contains("ClientBadAnswer")) {
+        if (DialoguesManager.memory.Contains("ClientBadAnswer")) {
             startDialogue.graphToPlay = bad;
         }
     }

@@ -93,7 +93,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: previousNodes
-        node: {fileID: 574640916147156260}
+        node: {fileID: 8430691210935352126}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -102,8 +102,7 @@ MonoBehaviour:
   previousNodes: {fileID: 0}
   nextNode: {fileID: 0}
   characterDialogue:
-    text: "Les clients ne comprennent pas les fonctionnalit\xE9s de la nouvelle application.
-      Notre mission est de leur expliquer pourquoi il est important de la t\xE9l\xE9charger."
+    text: "Les clients ne comprennent pas les fonctionnalit\xE9s de la nouvelle application. "
     associatedCharacter: {fileID: 11400000, guid: 723e8666d09feff43ab50c70be9b36e7,
       type: 2}
     goodAnswer: 0
@@ -169,6 +168,62 @@ MonoBehaviour:
   hasPlayerResponses: 0
   playerResponses: []
   showCharacterDialogue: 1
+--- !u!114 &-1936681694994162159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f29d5d8a82bd44d9b748619b1c3d5a, type: 3}
+  m_Name: Easy Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1720, y: 8}
+  ports:
+    keys:
+    - previousNodes
+    - nextNode
+    values:
+    - _fieldName: previousNodes
+      _node: {fileID: -1936681694994162159}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextNode
+        node: {fileID: 8430691210935352126}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: -1936681694994162159}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNodes
+        node: {fileID: 574640916147156260}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNodes: {fileID: 0}
+  nextNode: {fileID: 0}
+  characterDialogue:
+    text: DRING !
+    associatedCharacter: {fileID: 11400000, guid: 8222b66ec39ef064497366ed9d6e780a,
+      type: 2}
+    goodAnswer: 0
+    idMemory: 
+    isExpanded: 0
+    scrollPos: {x: 0, y: 0}
+  hasPlayerResponses: 0
+  playerResponses: []
+  showCharacterDialogue: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,6 +245,8 @@ MonoBehaviour:
   - {fileID: 5132401242319198560}
   - {fileID: -4042068278539520775}
   - {fileID: 6457337583274232833}
+  - {fileID: 8430691210935352126}
+  - {fileID: -1936681694994162159}
   root: {fileID: 3461973455687426262}
 --- !u!114 &574640916147156260
 MonoBehaviour:
@@ -204,7 +261,7 @@ MonoBehaviour:
   m_Name: Easy Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1384, y: 8}
+  position: {x: 2056, y: 8}
   ports:
     keys:
     - previousNodes
@@ -216,7 +273,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: nextNode
-        node: {fileID: -5939127167893135019}
+        node: {fileID: -1936681694994162159}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -369,7 +426,7 @@ MonoBehaviour:
   m_Name: Easy Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1720, y: 8}
+  position: {x: 2392, y: 8}
   ports:
     keys:
     - previousNodes
@@ -425,7 +482,7 @@ MonoBehaviour:
   m_Name: Jump
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 2088, y: 8}
+  position: {x: 2760, y: 8}
   ports:
     keys:
     - previousNodes
@@ -457,3 +514,59 @@ MonoBehaviour:
   jumpNode: {fileID: 3461973455687426262, guid: 11d6ab94c8ed58b4f8de8576691f03fd,
     type: 2}
   characterOverride: {fileID: 0}
+--- !u!114 &8430691210935352126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f29d5d8a82bd44d9b748619b1c3d5a, type: 3}
+  m_Name: Easy Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1384, y: 8}
+  ports:
+    keys:
+    - previousNodes
+    - nextNode
+    values:
+    - _fieldName: previousNodes
+      _node: {fileID: 8430691210935352126}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextNode
+        node: {fileID: -5939127167893135019}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: 8430691210935352126}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNodes
+        node: {fileID: -1936681694994162159}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNodes: {fileID: 0}
+  nextNode: {fileID: 0}
+  characterDialogue:
+    text: "Notre mission est de leur expliquer pourquoi il est important de la t\xE9l\xE9charger."
+    associatedCharacter: {fileID: 11400000, guid: 723e8666d09feff43ab50c70be9b36e7,
+      type: 2}
+    goodAnswer: 0
+    idMemory: 
+    isExpanded: 0
+    scrollPos: {x: 0, y: 0}
+  hasPlayerResponses: 0
+  playerResponses: []
+  showCharacterDialogue: 1

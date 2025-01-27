@@ -4,12 +4,23 @@ using UnityEngine.SceneManagement;
 public class NextLevel : MonoBehaviour {
     [SerializeField] private int LevelTravel;
     public bool isLock = true;
+    public bool playerInTrigger;
 
-    private void OnTriggerStay2D(Collider2D other) {
-        if (other.CompareTag("Player") && !isLock) {
-            if (Input.GetKeyDown(KeyCode.E)) {
-                SceneManager.LoadScene(LevelTravel);
-            }
+    private void Update() {
+        if (playerInTrigger && !isLock && Input.GetKeyDown(KeyCode.E)) {
+            SceneManager.LoadScene(LevelTravel);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.CompareTag("Player")) {
+            playerInTrigger = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other) {
+        if (other.CompareTag("Player")) {
+            playerInTrigger = false;
         }
     }
 

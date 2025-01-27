@@ -44,7 +44,7 @@ MonoBehaviour:
   nextNode: {fileID: 0}
   characterDialogue:
     text: Bien, allons y !
-    associatedCharacter: {fileID: 11400000, guid: 3fd64bfad8bdf8640adee6b8dda61f52,
+    associatedCharacter: {fileID: 11400000, guid: b2494cbca303f7f448505efc31d0f4db,
       type: 2}
     goodAnswer: 0
     idMemory: 
@@ -171,7 +171,7 @@ MonoBehaviour:
   characterDialogue:
     text: "On a termin\xE9 l\u2019installation de l\u2019\xE9quipement. Tu as r\xE9ussi
       \xE0 accomplir ta mission ?"
-    associatedCharacter: {fileID: 11400000, guid: 3fd64bfad8bdf8640adee6b8dda61f52,
+    associatedCharacter: {fileID: 11400000, guid: b2494cbca303f7f448505efc31d0f4db,
       type: 2}
     goodAnswer: 0
     idMemory: 

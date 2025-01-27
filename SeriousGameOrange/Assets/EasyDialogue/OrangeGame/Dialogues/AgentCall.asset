@@ -44,7 +44,7 @@ MonoBehaviour:
   nextNode: {fileID: 0}
   characterDialogue:
     text: Parfait, je t'attends dans mon bureau.
-    associatedCharacter: {fileID: 11400000, guid: ac78222d75d66e240a8c32be75fbe136,
+    associatedCharacter: {fileID: 11400000, guid: 2fe73176d4e933546b7e97b7d87725f6,
       type: 2}
     goodAnswer: 0
     idMemory: 
@@ -154,7 +154,7 @@ MonoBehaviour:
   characterDialogue:
     text: La croissance de la performance de l'entreprise en deux temps ! Donc, je
       t'attends dans mon bureau.
-    associatedCharacter: {fileID: 11400000, guid: ac78222d75d66e240a8c32be75fbe136,
+    associatedCharacter: {fileID: 11400000, guid: 2fe73176d4e933546b7e97b7d87725f6,
       type: 2}
     goodAnswer: 0
     idMemory: 
@@ -213,7 +213,7 @@ MonoBehaviour:
   nextNode: {fileID: 0}
   characterDialogue:
     text: "Un caf\xE9 c'est super, mais tu sais, ce qui est super aussi ?"
-    associatedCharacter: {fileID: 11400000, guid: ac78222d75d66e240a8c32be75fbe136,
+    associatedCharacter: {fileID: 11400000, guid: 2fe73176d4e933546b7e97b7d87725f6,
       type: 2}
     goodAnswer: 0
     idMemory: 
