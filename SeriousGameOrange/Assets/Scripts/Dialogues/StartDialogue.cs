@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 public class StartDialogue : MonoBehaviour {
-    [SerializeField] private EasyDialogueGraph graphToPlay;
+    public EasyDialogueGraph graphToPlay;
     [SerializeField] private bool canBeReplayed;
     [SerializeField] private UnityEvent callback;
     
@@ -13,6 +13,13 @@ public class StartDialogue : MonoBehaviour {
         if(other.CompareTag("Player")) {
             hasBeenPlayed = true;
             DialoguesManager.Instance.StartDialogueEncounter(ref graphToPlay, callback);
+        }
+    }
+    
+    public void UnlockTheDoor() {
+        NextLevel[] doors = FindObjectsByType<NextLevel>(FindObjectsSortMode.None);
+        foreach (NextLevel door in doors) {
+            door.Unlock();
         }
     }
 }

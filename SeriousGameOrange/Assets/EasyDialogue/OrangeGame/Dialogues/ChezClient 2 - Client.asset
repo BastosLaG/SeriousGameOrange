@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Name: Easy Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1672, y: 8}
+  position: {x: 2024, y: 8}
   ports:
     keys:
     - previousNodes
@@ -139,8 +139,8 @@ MonoBehaviour:
       - fieldName: nextNode
         node: {fileID: -4042068278539520775}
         reroutePoints: []
-      - fieldName: nextNode0
-        node: {fileID: -4042068278539520775}
+      - fieldName: nextNode
+        node: {fileID: -1870589786596580580}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -223,7 +223,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: previousNodes
-        node: {fileID: -5939127167893135019}
+        node: {fileID: -1870589786596580580}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
@@ -235,7 +235,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: previousNodes
-        node: {fileID: 5483129102714567289}
+        node: {fileID: 7937282607163866999}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
@@ -247,7 +247,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: previousNodes
-        node: {fileID: 5132401242319198560}
+        node: {fileID: -2493050760362887650}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
@@ -265,21 +265,19 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
   hasPlayerResponses: 1
   playerResponses:
-  - text: "Comment r\xE9duire de 10 % la facture de consommation finale."
+  - text: "R\xE9duire sa facture de consommation"
     associatedCharacter: {fileID: 0}
     goodAnswer: 2
     idMemory: ClientBadAnswer
     isExpanded: 1
     scrollPos: {x: 0, y: 0}
-  - text: "En supprimant les fichiers cache et les anciennes donn\xE9es, vous r\xE9duisez
-      votre empreinte carbone."
+  - text: supprimer les fichiers caches
     associatedCharacter: {fileID: 0}
     goodAnswer: 1
     idMemory: 
     isExpanded: 1
     scrollPos: {x: 0, y: 0}
-  - text: "Si vous r\xE9duisez la qualit\xE9 de la vid\xE9o des podcasts ou des playlists,
-      vous r\xE9duisez la consommation d'energie."
+  - text: "R\xE9duire la qualit\xE9 des vid\xE9os"
     associatedCharacter: {fileID: 0}
     goodAnswer: 1
     idMemory: 
@@ -299,7 +297,7 @@ MonoBehaviour:
   m_Name: Easy Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 2760, y: 8}
+  position: {x: 3112, y: 8}
   ports:
     keys:
     - previousNodes
@@ -337,6 +335,119 @@ MonoBehaviour:
   characterDialogue:
     text: Bon, je veux bien prendre ce guide. Merci.
     associatedCharacter: {fileID: 11400000, guid: 01afe5a044a5c1543a2d0cf58f58ff37,
+      type: 2}
+    goodAnswer: 0
+    idMemory: 
+    isExpanded: 0
+    scrollPos: {x: 0, y: 0}
+  hasPlayerResponses: 0
+  playerResponses: []
+  showCharacterDialogue: 1
+--- !u!114 &-2493050760362887650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f29d5d8a82bd44d9b748619b1c3d5a, type: 3}
+  m_Name: Easy Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1704, y: 424}
+  ports:
+    keys:
+    - previousNodes
+    - nextNode
+    values:
+    - _fieldName: previousNodes
+      _node: {fileID: -2493050760362887650}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextNode2
+        node: {fileID: -4042068278539520775}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: -2493050760362887650}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNodes
+        node: {fileID: 5132401242319198560}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNodes: {fileID: 0}
+  nextNode: {fileID: 0}
+  characterDialogue:
+    text: "Si vous r\xE9duisez la qualit\xE9 de la vid\xE9o des podcasts ou des playlists,
+      vous r\xE9duisez la consommation d'energie."
+    associatedCharacter: {fileID: 11400000, guid: db9f7c620c2e5f24cbe3fe62c423f2b1,
+      type: 2}
+    goodAnswer: 0
+    idMemory: 
+    isExpanded: 0
+    scrollPos: {x: 0, y: 0}
+  hasPlayerResponses: 0
+  playerResponses: []
+  showCharacterDialogue: 1
+--- !u!114 &-1870589786596580580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f29d5d8a82bd44d9b748619b1c3d5a, type: 3}
+  m_Name: Easy Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1704, y: 8}
+  ports:
+    keys:
+    - previousNodes
+    - nextNode
+    values:
+    - _fieldName: previousNodes
+      _node: {fileID: -1870589786596580580}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextNode0
+        node: {fileID: -4042068278539520775}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: -1870589786596580580}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNodes
+        node: {fileID: -5939127167893135019}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNodes: {fileID: 0}
+  nextNode: {fileID: 0}
+  characterDialogue:
+    text: "Comment r\xE9duire de 10 % la facture de consommation finale."
+    associatedCharacter: {fileID: 11400000, guid: db9f7c620c2e5f24cbe3fe62c423f2b1,
       type: 2}
     goodAnswer: 0
     idMemory: 
@@ -429,6 +540,9 @@ MonoBehaviour:
   - {fileID: -7425828907458608166}
   - {fileID: -1266398010963640201}
   - {fileID: -3700169349065466109}
+  - {fileID: -1870589786596580580}
+  - {fileID: -2493050760362887650}
+  - {fileID: 7937282607163866999}
   root: {fileID: 3461973455687426262}
 --- !u!114 &940975156091364673
 MonoBehaviour:
@@ -443,7 +557,7 @@ MonoBehaviour:
   m_Name: Easy Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1992, y: 424}
+  position: {x: 2344, y: 424}
   ports:
     keys:
     - previousNodes
@@ -501,7 +615,7 @@ MonoBehaviour:
   m_Name: Easy Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 2328, y: 8}
+  position: {x: 2680, y: 8}
   ports:
     keys:
     - previousNodes
@@ -667,7 +781,7 @@ MonoBehaviour:
   m_Name: Easy Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1672, y: 424}
+  position: {x: 2024, y: 424}
   ports:
     keys:
     - previousNodes
@@ -678,8 +792,8 @@ MonoBehaviour:
       _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: nextNode2
-        node: {fileID: -4042068278539520775}
+      - fieldName: nextNode
+        node: {fileID: -2493050760362887650}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -723,7 +837,7 @@ MonoBehaviour:
   m_Name: Easy Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1672, y: 216}
+  position: {x: 2024, y: 216}
   ports:
     keys:
     - previousNodes
@@ -734,8 +848,8 @@ MonoBehaviour:
       _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: nextNode1
-        node: {fileID: -4042068278539520775}
+      - fieldName: nextNode
+        node: {fileID: 7937282607163866999}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -779,7 +893,7 @@ MonoBehaviour:
   m_Name: Easy Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1992, y: 8}
+  position: {x: 2344, y: 8}
   ports:
     keys:
     - previousNodes
@@ -835,7 +949,7 @@ MonoBehaviour:
   m_Name: Easy Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1992, y: 216}
+  position: {x: 2344, y: 216}
   ports:
     keys:
     - previousNodes
@@ -870,6 +984,63 @@ MonoBehaviour:
   characterDialogue:
     text: "Si c'est dans votre guide, \xE7a m\xE9rite d'\xEAtre lu."
     associatedCharacter: {fileID: 11400000, guid: 01afe5a044a5c1543a2d0cf58f58ff37,
+      type: 2}
+    goodAnswer: 0
+    idMemory: 
+    isExpanded: 0
+    scrollPos: {x: 0, y: 0}
+  hasPlayerResponses: 0
+  playerResponses: []
+  showCharacterDialogue: 1
+--- !u!114 &7937282607163866999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f29d5d8a82bd44d9b748619b1c3d5a, type: 3}
+  m_Name: Easy Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1704, y: 216}
+  ports:
+    keys:
+    - previousNodes
+    - nextNode
+    values:
+    - _fieldName: previousNodes
+      _node: {fileID: 7937282607163866999}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextNode1
+        node: {fileID: -4042068278539520775}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: 7937282607163866999}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNodes
+        node: {fileID: 5483129102714567289}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNodes: {fileID: 0}
+  nextNode: {fileID: 0}
+  characterDialogue:
+    text: "En supprimant les fichiers cache et les anciennes donn\xE9es, vous r\xE9duisez
+      votre empreinte carbone."
+    associatedCharacter: {fileID: 11400000, guid: db9f7c620c2e5f24cbe3fe62c423f2b1,
       type: 2}
     goodAnswer: 0
     idMemory: 

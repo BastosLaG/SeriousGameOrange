@@ -21,7 +21,7 @@ public class DialoguesManager : MonoBehaviour {
     private EasyDialogueGraph currentGraph;
     private UnityEvent callback;
 
-    public NextLevel door;
+    private NextLevel[] doors;
 
     private void Awake() {
         if(Instance == null) {
@@ -31,6 +31,7 @@ public class DialoguesManager : MonoBehaviour {
         }
         
         characters = new Dictionary<Character, Transform>();
+        doors = FindObjectsByType<NextLevel>(FindObjectsSortMode.None);
     }
 
     private void Start() {
@@ -107,8 +108,14 @@ public class DialoguesManager : MonoBehaviour {
     }
 
     private void DisplayDialogue(ref DialogueLine dialogue) {
+        foreach(Character character in characters.Keys) {
+            Debug.Log(character);
+        }
+        Debug.Log(dialogue.Character);
         if (characters.TryGetValue(dialogue.Character, out Transform characterTransform)) {
+            Debug.Log(characterTransform.position);
             Vector2 screenPoint = GameObject.Find("Camera").transform.InverseTransformPoint(characterTransform.position);
+            Debug.Log(screenPoint);
             dialogueTransform.localPosition = new Vector3(screenPoint.x * 960 / 9, screenPoint.y * 108, 0);
         }
         
@@ -141,9 +148,32 @@ public class DialoguesManager : MonoBehaviour {
     }
 
     public void ChangeMapFor() {
-        //switch (memory[0]) {
-        //    case "goTechnicien":
-        //        door.WhichMap(3);
-        //}
+        foreach(NextLevel door in doors) {
+            switch (memory[0]) {
+                case "goManageur":
+                    door.WhichMap(2);
+                    break;
+                case "goTechnicien":
+                    door.WhichMap(3);
+                    break;
+                case "goMarketing":
+                    door.WhichMap(4);
+                    break;
+            }
+        }
+    }
+    
+    public void ChoseNextMap() {
+        foreach (NextLevel door in doors) {
+            if (!memory.Contains("IDoManageuse")) {
+                door.WhichMap(2);
+            } else if (!memory.Contains("IDoTechnicien")) {
+                door.WhichMap(3);
+            } else if (!memory.Contains("IDoMarketing")) {
+                door.WhichMap(4);
+            } else {
+                door.WhichMap(5);
+            }
+        }
     }
 }

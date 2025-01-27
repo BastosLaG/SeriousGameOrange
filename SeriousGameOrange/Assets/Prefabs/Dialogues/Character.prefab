@@ -231,11 +231,58 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartDialogue
       objectReference: {fileID: 0}
+    - target: {fileID: 8797117877962367167, guid: b0a18aff59c9a5c48b57827e4aab0701,
+        type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797117877962367167, guid: b0a18aff59c9a5c48b57827e4aab0701,
+        type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797117877962367167, guid: b0a18aff59c9a5c48b57827e4aab0701,
+        type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7816585235480774049}
+    - target: {fileID: 8797117877962367167, guid: b0a18aff59c9a5c48b57827e4aab0701,
+        type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797117877962367167, guid: b0a18aff59c9a5c48b57827e4aab0701,
+        type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UnlockTheDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797117877962367167, guid: b0a18aff59c9a5c48b57827e4aab0701,
+        type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: StartDialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797117877962367167, guid: b0a18aff59c9a5c48b57827e4aab0701,
+        type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0a18aff59c9a5c48b57827e4aab0701, type: 3}
+--- !u!114 &7816585235480774049 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8797117877962367167, guid: b0a18aff59c9a5c48b57827e4aab0701,
+    type: 3}
+  m_PrefabInstance: {fileID: 1616707339124630814}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb798aafc3dde334ba44807b5d9c12aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8591434644797054370 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7013611535336913084, guid: b0a18aff59c9a5c48b57827e4aab0701,

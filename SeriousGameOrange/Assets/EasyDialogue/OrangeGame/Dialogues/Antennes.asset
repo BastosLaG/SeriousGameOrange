@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Easy Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 2408, y: 8}
+  position: {x: 2728, y: 8}
   ports:
     keys:
     - previousNodes
@@ -50,7 +50,7 @@ MonoBehaviour:
   nextNode: {fileID: 0}
   characterDialogue:
     text: "J'ai termin\xE9 les modifications. L'ancienne antenne est d\xE9connect\xE9e."
-    associatedCharacter: {fileID: 11400000, guid: 3fd64bfad8bdf8640adee6b8dda61f52,
+    associatedCharacter: {fileID: 11400000, guid: b2494cbca303f7f448505efc31d0f4db,
       type: 2}
     goodAnswer: 0
     idMemory: 
@@ -72,7 +72,7 @@ MonoBehaviour:
   m_Name: Easy Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1352, y: 8}
+  position: {x: 1672, y: 8}
   ports:
     keys:
     - previousNodes
@@ -83,8 +83,8 @@ MonoBehaviour:
       _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: nextNode0
-        node: {fileID: -4042068278539520775}
+      - fieldName: nextNode
+        node: {fileID: -1235508997457984545}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -107,7 +107,7 @@ MonoBehaviour:
   characterDialogue:
     text: "Je crois qu'on peut faire \xE7a. De toute fa\xE7on, cette antenne ne sera
       plus utilis\xE9."
-    associatedCharacter: {fileID: 11400000, guid: 3fd64bfad8bdf8640adee6b8dda61f52,
+    associatedCharacter: {fileID: 11400000, guid: b2494cbca303f7f448505efc31d0f4db,
       type: 2}
     goodAnswer: 0
     idMemory: 
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Name: Easy Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1672, y: 8}
+  position: {x: 1992, y: 8}
   ports:
     keys:
     - previousNodes
@@ -164,7 +164,7 @@ MonoBehaviour:
   characterDialogue:
     text: "On effectue une transition vers des technologies plus modernes, mais les
       remplacements g\xE9n\xE8rent eux-m\xEAmes un impact carbone."
-    associatedCharacter: {fileID: 11400000, guid: 3fd64bfad8bdf8640adee6b8dda61f52,
+    associatedCharacter: {fileID: 11400000, guid: b2494cbca303f7f448505efc31d0f4db,
       type: 2}
     goodAnswer: 0
     idMemory: 
@@ -221,7 +221,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: previousNodes
-        node: {fileID: -4768199015417662560}
+        node: {fileID: -1235508997457984545}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
@@ -233,7 +233,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: previousNodes
-        node: {fileID: 4374869291872627524}
+        node: {fileID: 2611268200979285821}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
@@ -244,7 +244,7 @@ MonoBehaviour:
   characterDialogue:
     text: "Les techniciens stagiaires ont oubli\xE9 de la d\xE9sactiver, probablement.
       Elle cause des erreurs sur le r\xE9seau."
-    associatedCharacter: {fileID: 11400000, guid: 3fd64bfad8bdf8640adee6b8dda61f52,
+    associatedCharacter: {fileID: 11400000, guid: b2494cbca303f7f448505efc31d0f4db,
       type: 2}
     goodAnswer: 0
     idMemory: 
@@ -252,17 +252,16 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
   hasPlayerResponses: 1
   playerResponses:
-  - text: "Il faut donc la d\xE9sactiver."
+  - text: "La d\xE9sactiv\xE9"
     associatedCharacter: {fileID: 0}
     goodAnswer: 1
-    idMemory: 
+    idMemory: IDoTechnicien
     isExpanded: 1
     scrollPos: {x: 0, y: 0}
-  - text: "On doit la d\xE9truire. L'entreprise ferme les r\xE9seaux 2G et 3G de
-      toute fa\xE7on. "
+  - text: "La d\xE9truire"
     associatedCharacter: {fileID: 0}
     goodAnswer: 2
-    idMemory: 
+    idMemory: IDoTechnicien
     isExpanded: 1
     scrollPos: {x: 0, y: 0}
   showCharacterDialogue: 1
@@ -279,7 +278,7 @@ MonoBehaviour:
   m_Name: Easy Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 2728, y: 8}
+  position: {x: 3048, y: 8}
   ports:
     keys:
     - previousNodes
@@ -311,7 +310,7 @@ MonoBehaviour:
   characterDialogue:
     text: "On va se d\xE9brouiller \xE0 partir d\u2019ici. Ce serait g\xE9nial de
       te revoir dans notre \xE9quipe, stagiaire !"
-    associatedCharacter: {fileID: 11400000, guid: 3fd64bfad8bdf8640adee6b8dda61f52,
+    associatedCharacter: {fileID: 11400000, guid: b2494cbca303f7f448505efc31d0f4db,
       type: 2}
     goodAnswer: 0
     idMemory: 
@@ -333,7 +332,7 @@ MonoBehaviour:
   m_Name: Easy Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1672, y: 216}
+  position: {x: 1992, y: 216}
   ports:
     keys:
     - previousNodes
@@ -367,7 +366,63 @@ MonoBehaviour:
   nextNode: {fileID: 0}
   characterDialogue:
     text: On doit rester prudent et faire rien que des remplacements necessaires.
-    associatedCharacter: {fileID: 11400000, guid: 3fd64bfad8bdf8640adee6b8dda61f52,
+    associatedCharacter: {fileID: 11400000, guid: b2494cbca303f7f448505efc31d0f4db,
+      type: 2}
+    goodAnswer: 0
+    idMemory: 
+    isExpanded: 0
+    scrollPos: {x: 0, y: 0}
+  hasPlayerResponses: 0
+  playerResponses: []
+  showCharacterDialogue: 1
+--- !u!114 &-1235508997457984545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f29d5d8a82bd44d9b748619b1c3d5a, type: 3}
+  m_Name: Easy Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1352, y: 8}
+  ports:
+    keys:
+    - previousNodes
+    - nextNode
+    values:
+    - _fieldName: previousNodes
+      _node: {fileID: -1235508997457984545}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextNode0
+        node: {fileID: -4042068278539520775}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: -1235508997457984545}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNodes
+        node: {fileID: -4768199015417662560}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNodes: {fileID: 0}
+  nextNode: {fileID: 0}
+  characterDialogue:
+    text: "Il faut donc la d\xE9sactiver."
+    associatedCharacter: {fileID: 11400000, guid: db9f7c620c2e5f24cbe3fe62c423f2b1,
       type: 2}
     goodAnswer: 0
     idMemory: 
@@ -457,6 +512,8 @@ MonoBehaviour:
   - {fileID: -1591338864012567616}
   - {fileID: 3207753059015401890}
   - {fileID: -7241542916520778884}
+  - {fileID: -1235508997457984545}
+  - {fileID: 2611268200979285821}
   root: {fileID: 3461973455687426262}
 --- !u!114 &1649806748811514364
 MonoBehaviour:
@@ -505,7 +562,64 @@ MonoBehaviour:
   nextNode: {fileID: 0}
   characterDialogue:
     text: "On a eu quelques soucis, mais on est en train de les r\xE9gler en ce moment."
-    associatedCharacter: {fileID: 11400000, guid: 3fd64bfad8bdf8640adee6b8dda61f52,
+    associatedCharacter: {fileID: 11400000, guid: b2494cbca303f7f448505efc31d0f4db,
+      type: 2}
+    goodAnswer: 0
+    idMemory: 
+    isExpanded: 0
+    scrollPos: {x: 0, y: 0}
+  hasPlayerResponses: 0
+  playerResponses: []
+  showCharacterDialogue: 1
+--- !u!114 &2611268200979285821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f29d5d8a82bd44d9b748619b1c3d5a, type: 3}
+  m_Name: Easy Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1352, y: 216}
+  ports:
+    keys:
+    - previousNodes
+    - nextNode
+    values:
+    - _fieldName: previousNodes
+      _node: {fileID: 2611268200979285821}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextNode1
+        node: {fileID: -4042068278539520775}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: 2611268200979285821}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNodes
+        node: {fileID: 4374869291872627524}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNodes: {fileID: 0}
+  nextNode: {fileID: 0}
+  characterDialogue:
+    text: "On doit la d\xE9truire. L'entreprise ferme les r\xE9seaux 2G et 3G de
+      toute fa\xE7on. "
+    associatedCharacter: {fileID: 11400000, guid: db9f7c620c2e5f24cbe3fe62c423f2b1,
       type: 2}
     goodAnswer: 0
     idMemory: 
@@ -527,7 +641,7 @@ MonoBehaviour:
   m_Name: Easy Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1992, y: 8}
+  position: {x: 2312, y: 8}
   ports:
     keys:
     - previousNodes
@@ -561,7 +675,7 @@ MonoBehaviour:
   nextNode: {fileID: 0}
   characterDialogue:
     text: "Donc, nous restons prudent et faisons juste les remplacements n\xE9cessaires."
-    associatedCharacter: {fileID: 11400000, guid: 3fd64bfad8bdf8640adee6b8dda61f52,
+    associatedCharacter: {fileID: 11400000, guid: b2494cbca303f7f448505efc31d0f4db,
       type: 2}
     goodAnswer: 0
     idMemory: 
@@ -615,7 +729,7 @@ MonoBehaviour:
   characterDialogue:
     text: Quoi de neuf, stagiaire ? Nous sommes en train d'installer de nouvelles
       antennes.
-    associatedCharacter: {fileID: 11400000, guid: 3fd64bfad8bdf8640adee6b8dda61f52,
+    associatedCharacter: {fileID: 11400000, guid: b2494cbca303f7f448505efc31d0f4db,
       type: 2}
     goodAnswer: 0
     idMemory: 
@@ -671,7 +785,7 @@ MonoBehaviour:
   nextNode: {fileID: 0}
   characterDialogue:
     text: Ah, oui, tu as raison !
-    associatedCharacter: {fileID: 11400000, guid: 3fd64bfad8bdf8640adee6b8dda61f52,
+    associatedCharacter: {fileID: 11400000, guid: b2494cbca303f7f448505efc31d0f4db,
       type: 2}
     goodAnswer: 0
     idMemory: 
@@ -693,7 +807,7 @@ MonoBehaviour:
   m_Name: Easy Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1352, y: 216}
+  position: {x: 1672, y: 216}
   ports:
     keys:
     - previousNodes
@@ -704,8 +818,8 @@ MonoBehaviour:
       _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: nextNode1
-        node: {fileID: -4042068278539520775}
+      - fieldName: nextNode
+        node: {fileID: 2611268200979285821}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -728,7 +842,7 @@ MonoBehaviour:
   characterDialogue:
     text: "Attention ! Toutes remplacements g\xE9n\xE8rent un impact carbone non
       n\xE9gligeable. "
-    associatedCharacter: {fileID: 11400000, guid: 3fd64bfad8bdf8640adee6b8dda61f52,
+    associatedCharacter: {fileID: 11400000, guid: b2494cbca303f7f448505efc31d0f4db,
       type: 2}
     goodAnswer: 0
     idMemory: 

@@ -188,6 +188,7 @@ MonoBehaviour:
   - {fileID: 574640916147156260}
   - {fileID: -5939127167893135019}
   - {fileID: -4042068278539520775}
+  - {fileID: 5128593891995576741}
   root: {fileID: 3461973455687426262}
 --- !u!114 &574640916147156260
 MonoBehaviour:
@@ -224,7 +225,10 @@ MonoBehaviour:
       _node: {fileID: 574640916147156260}
       _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: previousNodes
+        node: {fileID: 5128593891995576741}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -352,3 +356,48 @@ MonoBehaviour:
   hasPlayerResponses: 0
   playerResponses: []
   showCharacterDialogue: 1
+--- !u!114 &5128593891995576741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e45cbc97473844b46a22168ea6b7b6bc, type: 3}
+  m_Name: Jump
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1704, y: 8}
+  ports:
+    keys:
+    - previousNodes
+    - nextNode
+    values:
+    - _fieldName: previousNodes
+      _node: {fileID: 5128593891995576741}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextNode
+        node: {fileID: 574640916147156260}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: 5128593891995576741}
+      _typeQualifiedName: EasyDialogue.EasyDialogueNode, EasyDialogue, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNodes: {fileID: 0}
+  nextNode: {fileID: 0}
+  jumpNode: {fileID: 3461973455687426262, guid: b42b6ddf2c543aa4ab64be914a081873,
+    type: 2}
+  characterOverride: {fileID: 0}
