@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: f9b69549aea46804bb895601319cfa6a
+guid: 10d27ea922dec4b46a5c634bdf84f06e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3319219221091432282
-    second: Arriere_plan_0
+      213: 3429912550996979413
+    second: soundOffBlack_0
+  - first:
+      213: 6147256651422713939
+    second: soundOffBlack_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Arriere_plan_0
+      name: soundOffBlack_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 412
-        height: 250
+        width: 19
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a8423354b3cfe1d0800000000000000
-      internalID: -3319219221091432282
+      spriteID: 5de24dcea4f799f20800000000000000
+      internalID: 3429912550996979413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soundOffBlack_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 8
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 358453bda517f4550800000000000000
+      internalID: 6147256651422713939
       vertices: []
       indices: 
       edges: []
@@ -125,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Arriere_plan_0: -3319219221091432282
+      soundOffBlack_0: 3429912550996979413
+      soundOffBlack_1: 6147256651422713939
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
